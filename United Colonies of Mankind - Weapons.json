@@ -1,0 +1,1697 @@
+{
+  "catalogue": {
+    "name": "United Colonies of Mankind - Weapons",
+    "id": "cc73-3fe2-5b3f-d6d0",
+    "authorName": "John Kemp",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander/issues",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "bb34-1413-3527-b957",
+    "gameSystemRevision": 17,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "sharedSelectionEntries": [
+      {
+        "name": "Python SH Laser",
+        "id": "dc27-f763-3416-e642",
+        "collective": true,
+        "comment": "3+/3/2 F(N) BL BT(10) FL",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9ed0-2799-b5e8-629e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9ed0-2799-b5e8-629e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Bloom", "id": "19bd-8d62-880d-0ac3", "hidden": false, "targetId": "17ad-3ce8-8d61-f7e4", "type": "rule"},
+          {"name": "Burnthrough (X)", "id": "9a28-8d3e-5a21-401d", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "50aa-1026-b7d9-d495", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Python Super-Heavy Laser",
+            "id": "b035-fb0d-9cca-87c9",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Bloom, Burnthrough (10), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Viper SH Laser",
+        "id": "2d5a-a909-0aa2-880e",
+        "collective": true,
+        "comment": "3+/4/1 F(N) BT(10) FL",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "bee1-69c2-868c-d52a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "bee1-69c2-868c-d52a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "cb22-68df-1370-c5ba", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "3750-230c-f78d-8e7f", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Viper Super-Heavy Laser",
+            "id": "dc84-079d-0e88-1ce6",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (10), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cobra H Laser",
+        "id": "245d-9808-483a-d36c",
+        "collective": true,
+        "comment": "3+/2/1 F(N) BT(6) FL",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c145-9974-19d6-a6ca-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c145-9974-19d6-a6ca-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "5b97-8e26-f7b4-4e65", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "e7bb-b48d-7fce-6e6f", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Cobra Heavy Laser",
+            "id": "4ba1-ed62-04ad-daa2",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (6), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cobra H Laser Pair",
+        "id": "0835-f51c-d3a0-8888",
+        "collective": true,
+        "comment": "3+/2/2 F(N) BT(8) FL",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e27d-c17f-8406-22e2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "e27d-c17f-8406-22e2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "2654-400c-daa6-b6f1", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "66ce-a03a-cfe6-3485", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Cobra Heavy Laser Pair",
+            "id": "2ced-4c63-b39d-bfdf",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (8), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mamba Laser",
+        "id": "993e-5a0c-1223-3b21",
+        "collective": true,
+        "comment": "3+/2/1 F BT(3) FL",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3486-e2f5-66c4-0812", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "ae48-030d-28d1-b9c5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "57bf-a6c5-5128-43b2", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "e561-671e-9ac8-91e1", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Mamba Laser",
+            "id": "3ad5-5c9c-3cc9-faf1",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (3), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-12000 Twin",
+        "id": "f034-a745-8a86-485b",
+        "collective": true,
+        "comment": "2+/2/4 F(N) Crp",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "543f-054a-7670-2125-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "543f-054a-7670-2125-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Crippling", "id": "2bab-5251-3fc9-1c3d", "hidden": false, "targetId": "18ec-1b46-d0ed-e680", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-12000 Twin Mass Driver",
+            "id": "294f-1245-67bf-ca9d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "4", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Crippling", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-9000 Turret (Stbd & Port)",
+        "id": "f8e3-76b9-67d2-5b69",
+        "collective": true,
+        "comment": "2+/2/1 F/S(R+L) Fus(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "32d3-a295-b3d8-205c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "32d3-a295-b3d8-205c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Fusillade (X)", "id": "dc0d-f25c-aa34-4c39", "hidden": false, "targetId": "657f-18a5-dde4-5342", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-9000 Mass Driver Turret, Starboard",
+            "id": "a154-2e77-c724-f9a2",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (2)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-9000 Mass Driver Turret, Port",
+            "id": "1d2d-e693-fe83-bf26",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (2)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-9000 Twin",
+        "id": "1a71-4341-0eae-58e4",
+        "collective": true,
+        "comment": "3+/2/2 F Fus(1) ReEnt",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "34e3-1a08-704e-a32d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b98d-2c76-8a32-68ae", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Fusillade (X)", "id": "4423-da26-d1d9-4e37", "hidden": false, "targetId": "657f-18a5-dde4-5342", "type": "rule"},
+          {"name": "Re-Entry", "id": "0619-1ffa-7786-432f", "hidden": false, "targetId": "9f1d-3ad9-31e0-99c5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "UF-9000 Twin Mass Driver",
+            "id": "d73e-ce44-b395-c945",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (1), Re-Entry", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-9000-S Twin",
+        "id": "59f1-1568-9398-e148",
+        "collective": true,
+        "comment": "3+/2/2 F(N)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "acba-84da-eef3-763d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b51c-88cc-e559-f815", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-9000-S Twin Mass Driver",
+            "id": "5b06-5c92-eacc-3813",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets (Dorsal)",
+        "id": "55c2-eea8-9203-9e7d",
+        "collective": true,
+        "comment": "3+/8/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f3f4-f110-bd63-1294-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f3f4-f110-bd63-1294-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets, Dorsal Battery",
+            "id": "549f-5bf9-481c-5992",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets (Ventral)",
+        "id": "77a7-e56a-304e-843a",
+        "collective": true,
+        "comment": "3+/8/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "60ae-06a1-0bde-221b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "60ae-06a1-0bde-221b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets, Ventral Battery",
+            "id": "b8f2-1af7-bc29-7222",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets",
+        "id": "5aa1-5470-249f-6389",
+        "collective": true,
+        "comment": "3+/6/1 F/S Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c023-8042-c2d9-4bf0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c023-8042-c2d9-4bf0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "3d6a-0155-06c0-5eff", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "id": "8dd1-0ddc-8459-8af6",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "6", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets",
+        "id": "21c5-55a6-d824-4587",
+        "collective": true,
+        "comment": "3+/4/1 F/S Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "17e7-532f-59d9-9a45-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "17e7-532f-59d9-9a45-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "b06b-b834-df7e-c1d0", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "id": "c428-1828-1d96-b227",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets",
+        "id": "cded-9dfb-e373-b902",
+        "collective": true,
+        "comment": "3+/4/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "581e-2687-05f3-c597-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "581e-2687-05f3-c597-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "id": "a1ed-e8d8-4993-d161",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turret",
+        "id": "f60a-3a13-80f9-a2c8",
+        "collective": true,
+        "comment": "3+/4/1 F/S Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "fd8d-da73-2ee7-9908-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "fd8d-da73-2ee7-9908-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "60cb-095a-bd6c-5fe4", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turret",
+            "id": "dfca-80e9-1fd9-e806",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turrets",
+        "id": "bf82-04d9-8a0e-7266",
+        "collective": true,
+        "comment": "3+/4/1 F/S Sq(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "de89-322f-4fa3-5481-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "de89-322f-4fa3-5481-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Squadron (X)", "id": "68ae-03bb-026b-a3ac", "hidden": false, "targetId": "27bd-1d4f-7ca7-8d43", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "id": "717d-9edb-eb1b-f8c6",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Squadron (2)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-6400 Turret",
+        "id": "8a7b-a63f-6655-1e64",
+        "collective": true,
+        "comment": "3+/4/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9e15-5329-3284-6908-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9e15-5329-3284-6908-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turret",
+            "id": "0648-1bb0-2025-3424",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-4200 Turrets (Core)",
+        "id": "4736-7555-be6b-231a",
+        "collective": true,
+        "comment": "4+/12/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "379f-a783-e258-0918-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "379f-a783-e258-0918-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets, Core Battery",
+            "id": "e8c9-004f-daec-9ff9",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "12", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-4200 Turrets (Stbd & Port)",
+        "id": "5b53-0462-196d-6991",
+        "collective": true,
+        "comment": "4+/4/1 F/S(R+L)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "bde9-5ab8-54b3-1df8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "bde9-5ab8-54b3-1df8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets, Starboard Battery",
+            "id": "c2de-4783-81f9-793d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-4200 Mass Driver Turrets, Port Battery",
+            "id": "bf76-e3ad-28c3-6fcd",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-4200 Turrets (Port & Stbd)",
+        "id": "eb81-0206-2ab7-9a5d",
+        "collective": true,
+        "comment": "4+/4/1 F/S(L + R) Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "39f7-e06c-b7ae-14c2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "39f7-e06c-b7ae-14c2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "db9a-8528-6d9a-fb38", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets, Port Battery",
+            "id": "4b3c-2292-1558-1c75",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-4200 Mass Driver Turrets, Starboard Battery",
+            "id": "9bee-ddcd-c36b-b542",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-4200 Turrets (Port & Stbd)",
+        "id": "2007-860e-719c-09e4",
+        "collective": true,
+        "comment": "4+/4/1 F/S(L+R) Fus(2) Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3c37-dfba-0d44-0b44-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3c37-dfba-0d44-0b44-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Fusillade (X)", "id": "2fe2-6bdc-6c56-5633", "hidden": false, "targetId": "657f-18a5-dde4-5342", "type": "rule"},
+          {"name": "Linked (X)", "id": "817a-6735-dd57-eb5e", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets, Port Battery",
+            "id": "e17e-c273-0189-6b7d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (2), Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-4200 Mass Driver Turrets, Starboard Battery",
+            "id": "665b-309c-dee3-b630",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (2), Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-4200 Turret (Port & Stbd)",
+        "id": "85ef-c4b5-9eb2-0077",
+        "collective": true,
+        "comment": "4+/2/1 F/S(L+R) Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1827-8387-a950-4707-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1827-8387-a950-4707-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "a1b9-25dd-5066-5f97", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turret, Port",
+            "id": "1d0e-8117-536c-ed5c",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-4200 Mass Driver Turret, Starboard",
+            "id": "56cb-2ef7-324f-3ae1",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-2200 Triad",
+        "id": "4f1c-0fc6-bc21-220d",
+        "collective": true,
+        "comment": "4+/3/1 F/S Sq(3)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d340-f29c-ffbf-9116", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5a02-a1ef-88af-2320", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Squadron (X)", "id": "e12d-ab2c-eb95-ddf4", "hidden": false, "targetId": "27bd-1d4f-7ca7-8d43", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-2200 Mass Driver Triad",
+            "id": "bb5a-b592-6eb5-1829",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Squadron (3)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-2200 Turret",
+        "id": "9ff8-5511-d0d4-48c2",
+        "collective": true,
+        "comment": "4+/1/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e63b-59e0-417a-52cf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "cf8d-99d1-ff4c-0dbb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "UF-2200 Mass Driver Turret",
+            "id": "ceed-6c22-16a2-ae3d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-B-9000",
+        "id": "1519-4036-572d-a581",
+        "collective": true,
+        "comment": "3+/3/1 F Alt-1 // 2+/2/2 F Alt-1 Bmb",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "0472-0697-7b1c-48c9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7292-0f7e-040b-52d8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "57e6-9c5f-a91a-7559", "hidden": false, "targetId": "bfbc-e83a-c2b7-eb15", "type": "rule"},
+          {"name": "Bombardment", "id": "934e-2b0d-3c45-56b4", "hidden": false, "targetId": "9e06-f148-f8a3-26fb", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "UF-B-9000 Mass Driver",
+            "id": "5d7f-669d-9829-59f4",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Alt-1", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "UF-B-9000 Mass Driver",
+            "id": "0cea-f955-b49f-6c06",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Alt-1, Bombardment", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-B-8000",
+        "id": "18da-f374-06df-9958",
+        "collective": true,
+        "comment": "2+/6/1 F/S/R Bmb",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "398a-2ebc-4cb0-85b2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "398a-2ebc-4cb0-85b2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Bombardment", "id": "218c-977a-d52f-65ce", "hidden": false, "targetId": "9e06-f148-f8a3-26fb", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "UF-B-8000 Bombardment Turrets",
+            "id": "64b5-27c4-7a78-5130",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "6", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Bombardment", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UF-B-8000",
+        "id": "487a-b8ba-1320-a199",
+        "collective": true,
+        "comment": "2+/5/1 F/S/R Bmb Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "462d-2d48-bbfa-08b5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "462d-2d48-bbfa-08b5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Bombardment", "id": "e13d-fca6-c6a5-4e55", "hidden": false, "targetId": "9e06-f148-f8a3-26fb", "type": "rule"},
+          {"name": "Linked (X)", "id": "5c4b-7779-3eb1-69fe", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "UF-B-8000 Bombardment Turrets",
+            "id": "52ee-da95-3114-9ad6",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "5", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Bombardment, Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haywire Blaster",
+        "id": "3e7d-5edb-70fc-0ded",
+        "collective": true,
+        "comment": "4+/1/0 F CA(B) Haywire",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6cf7-d45c-be7b-1006", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7ef0-7adb-aa8a-334a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Close Action (Beam)", "id": "867d-d1a0-3db7-dac0", "hidden": false, "targetId": "b190-a6a9-c262-b6d0", "type": "rule"},
+          {"name": "Haywire", "id": "e9d3-4af9-f6b3-414a", "hidden": false, "targetId": "5aa2-9fc6-3657-0b4c", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Haywire Blaster",
+            "id": "d25f-34bb-a7c2-05d1",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "0", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action (Beam), Haywire", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Leviathan Missiles",
+        "id": "3ea8-1f3f-be42-86db",
+        "collective": true,
+        "comment": "3+/11/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "cc8d-ad6b-3892-afe1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "cc8d-ad6b-3892-afe1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "1dae-36ce-d06c-e43f", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Leviathan Missile Bays",
+            "id": "144f-ee22-c0ed-6236",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "11", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Swordfish Missiles",
+        "id": "a803-5d32-d6a9-ec67",
+        "collective": true,
+        "comment": "3+/8/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "bb67-ba09-aced-9099-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "bb67-ba09-aced-9099-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "f558-a66b-8487-232d", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Swordfish Missile Bays",
+            "id": "7355-181f-0fea-4589",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shark Missiles",
+        "id": "45e9-c67c-7c06-c84c",
+        "collective": true,
+        "comment": "4+/5/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "50b1-f624-74c0-49f0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "50b1-f624-74c0-49f0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "275b-06ba-d53d-6ec0", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Shark Missile Bays",
+            "id": "c96c-6dbf-fb63-3d4e",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "5", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Barracuda Missiles",
+        "id": "3470-dc96-83a6-2aef",
+        "collective": true,
+        "comment": "4+/2/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a635-e7b5-ec1f-1fa3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a635-e7b5-ec1f-1fa3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "2f3a-dc49-b31d-9c83", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Barracuda Missile Bays",
+            "id": "7736-98a1-0ede-69c8",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Barracuda-S Missiles",
+        "id": "9dd6-5195-8597-d056",
+        "collective": true,
+        "comment": "4+/3/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d994-a175-5c1b-365f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d7da-8ba0-13ff-0006", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "c2cf-e6bc-fbdc-219e", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Barracuda-S Missile Bays",
+            "id": "d58a-32e9-bcfe-da62",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stingray Missiles",
+        "id": "a564-9ab5-cae0-712c",
+        "collective": true,
+        "comment": "4+/3/1 F/S/R A2A CA Sq(3)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "5958-5ff4-ec44-42f9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9a4d-aa57-5d10-4a2d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Air-to-Air", "id": "6078-f3db-ee33-6be0", "hidden": false, "targetId": "c3e1-6bee-9e1e-8f27", "type": "rule"},
+          {"name": "Close Action", "id": "7e96-dc00-cfb8-3076", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Squadron (X)", "id": "b209-3d7b-d177-9c01", "hidden": false, "targetId": "27bd-1d4f-7ca7-8d43", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Stingray Missile Bays",
+            "id": "0d69-aa61-89ea-f67e",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Air-to-Air, Close Action, Squadron (3)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Piranha Missiles",
+        "id": "8a02-152a-962d-d9d5",
+        "collective": true,
+        "comment": "4+/7/1 F/S",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1e2c-fb7f-0207-b63d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f8a7-476b-b206-b248", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "d3c3-62d1-b3e9-5abd", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Piranha Missile Turrets",
+            "id": "eed7-b873-9f00-a824",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "7", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Torpedo",
+        "id": "8daa-d170-e81a-ef8b",
+        "collective": true,
+        "comment": "1 L(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "827c-5c50-4cfb-bc35-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "827c-5c50-4cfb-bc35-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Launch", "id": "5dd8-c100-24da-93cc", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"},
+          {"name": "L (X)", "id": "f6f7-d00e-98b7-3987", "hidden": false, "targetId": "6920-7d49-9ec8-1e76", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Torpedo",
+            "id": "fe82-f4c8-c52a-2618",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "$text": "L (2)", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Torpedo",
+        "id": "7ee2-ff87-ef1c-d493",
+        "collective": true,
+        "comment": "1 L(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f2fe-7521-8c03-5287-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f2fe-7521-8c03-5287-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Launch", "id": "6c43-693b-d1e3-244d", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"},
+          {"name": "L (X)", "id": "88ab-aeb6-4d8f-a6cf", "hidden": false, "targetId": "6920-7d49-9ec8-1e76", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Torpedo",
+            "id": "4026-ccca-0141-5a48",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "$text": "L (1)", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Light Torpedoes",
+        "id": "548f-e23a-160e-952f",
+        "collective": true,
+        "comment": "1 L(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "64d3-76e1-a2f5-e4ba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c027-20f0-9fb2-a23f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Launch", "id": "162c-b6b6-92ce-ecaa", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"},
+          {"name": "L (X)", "id": "e0eb-0607-e3d4-b25b", "hidden": false, "targetId": "6920-7d49-9ec8-1e76", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Light Torpedoes",
+            "id": "ec1f-8211-e38c-d966",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "$text": "L (2)", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "c007-7e83-1041-f7fb",
+        "collective": true,
+        "comment": "2",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "0f8f-1c26-ce3e-55e9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0ba6-4782-d4ed-6719", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "fe7a-7f81-ce45-6496", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "d825-0809-7e7a-7737",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "45c2-3645-b3bd-2648",
+        "collective": true,
+        "comment": "3",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "af78-5b7b-cc4c-6272-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "af78-5b7b-cc4c-6272-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "c9a9-b1b2-5fcb-5fb1", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "19e5-89a7-91d4-1a23",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "db90-b0d9-b641-a876",
+        "collective": true,
+        "comment": "7",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "cd27-0e09-4489-e455-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "cd27-0e09-4489-e455-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "84c6-c921-6ad5-5ee7", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "e781-e11b-46b6-408d",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "7", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "128a-7ca7-f016-c265",
+        "collective": true,
+        "comment": "15",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b426-e9d4-abc7-9bee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b426-e9d4-abc7-9bee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "c254-7bc0-16d3-d1c1", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "24d1-8da2-96f9-35cd",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "15", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Bulk Landers",
+        "id": "cceb-c35d-2166-c441",
+        "collective": true,
+        "comment": "4",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a9ec-b564-bcf3-f350-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a9ec-b564-bcf3-f350-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "fc03-3701-6b73-9b7c", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Bulk Landers",
+            "id": "28ea-e6de-a835-c066",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Bulk Landers",
+        "id": "659a-d36a-45d6-795f",
+        "collective": true,
+        "comment": "2",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d5e2-ddb0-61ab-5e3c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d5e2-ddb0-61ab-5e3c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "20ab-47df-b86b-80ce", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Bulk Landers",
+            "id": "f20b-096b-2f71-3911",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Dropships",
+        "id": "931a-93fc-a36f-1955",
+        "collective": true,
+        "comment": "1",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e654-d82a-6bfe-f789", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4a5e-005a-2e4a-22dc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "560f-ad4f-7a05-8482", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Dropships",
+            "id": "84be-0cab-b4c0-ce82",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      }
+    ]
+  }
+}

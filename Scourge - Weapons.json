@@ -1,0 +1,1498 @@
+{
+  "catalogue": {
+    "name": "Scourge - Weapons",
+    "id": "a924-95ec-b7ef-0afe",
+    "authorName": "John Kemp",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander/issues",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "bb34-1413-3527-b957",
+    "gameSystemRevision": 17,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "sharedProfiles": [
+      {
+        "name": "Torpedo",
+        "id": "d27f-0726-bc98-747f",
+        "comment": "1 Corr L(2)",
+        "hidden": false,
+        "typeId": "f174-1347-6969-af9b",
+        "typeName": "Load",
+        "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "$text": "Corruptor, L (2)", "typeId": "0574-9897-4dc9-48e8"}]
+      },
+      {
+        "name": "Oculus Beams",
+        "id": "c3ef-d985-372f-d97c",
+        "comment": "3+/1/2 F Scald",
+        "hidden": false,
+        "typeId": "1ddb-c7dc-57a9-b97f",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+          {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+          {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+          {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+          {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {"name": "----- Weapon -----", "id": "83cd-4fa4-36ec-fb2e", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Magnetron Lash",
+        "id": "bde3-870d-5c20-c210",
+        "comment": "*/4/1 F(N)  BT(8) CA Maul Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1c0b-ad7a-2048-869e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "483c-c1f5-9b6c-0739", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "6e9f-46f4-bc2c-8e5e", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Close Action", "id": "e237-b254-042e-de97", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Mauler", "id": "0ef9-c778-4ea4-1b22", "hidden": false, "targetId": "f6ec-da54-fd6f-2579", "type": "rule"},
+          {"name": "Scald", "id": "bc10-20be-09d1-c89a", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Magnetron Lash",
+            "id": "212a-4ebf-8ab9-bcd1",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "*", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (8), Close Action, Mauler, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus S. Phalanx",
+        "id": "8ebf-113e-0644-3b45",
+        "comment": "3+/8/2 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7631-a387-28e7-6010-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7631-a387-28e7-6010-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "3daf-846d-7129-52ff", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beam Super Phalanx",
+            "id": "1e7c-8a8b-b4b8-7a8d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Furnace Battery",
+        "id": "2663-040f-e837-6a88",
+        "comment": "3+/3/1 F BT(8) Corr Fl",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "06bb-4d41-e691-3f72", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5059-a7b2-e36a-19a2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "4aae-8618-1e65-ada6", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Corruptor", "id": "234c-9ef8-dc6c-3149", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Flash", "id": "bef7-6343-4b58-f8f7", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Battery",
+            "id": "6ae6-2892-91c9-6ed4",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (8), Corruptor, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Furnace Triad",
+        "id": "ae7a-6ca0-82fb-d063",
+        "comment": "3+/3/3 F(N) BT(12) Corr Fl",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ef36-46f8-36a9-026f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7b36-902e-2729-a86b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "f36c-f072-20bf-e6fc", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Corruptor", "id": "f9b6-bc76-25c3-72e2", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Flash", "id": "c307-bef4-920f-971d", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Triad",
+            "id": "59e5-04f8-df7d-50ae",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "3", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (12), Corruptor, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Furnace Fangs",
+        "id": "481d-2a15-8a2f-89c4",
+        "comment": "3+/3/1 F(N) BT(6) Corr Fl",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1a19-9e0c-306e-fea1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "31c1-e11f-0274-072f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "0734-92eb-847d-38eb", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Corruptor", "id": "6d06-248a-d8f8-b96d", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Flash", "id": "b334-8e5b-5ba1-aa8d", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Fangs",
+            "id": "2a7f-72e3-129b-0dde",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (6), Corruptor, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Furnace Cannons",
+        "id": "7351-6430-91f1-1eea",
+        "comment": "3+/2/1 F(N) BT(5) Corr Fl",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c915-be0e-66dc-0aea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f01a-ecb7-c678-e60f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "f494-816f-737a-39b7", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Corruptor", "id": "dea1-e478-7a5f-d2a1", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Flash", "id": "95eb-25be-370b-2b15", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Cannons",
+            "id": "8e7d-555b-c206-5d6d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (5), Corruptor, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Furnace Blaster",
+        "id": "2656-2e4e-dbf0-6ef2",
+        "comment": "3+/2/1 F(N) BT(3) Corr Fl",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8703-b912-54d5-12a8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a757-cb48-a683-d6d4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "3534-513b-4590-587d", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Corruptor", "id": "8f27-9586-d701-6978", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Flash", "id": "52a2-3c1f-6632-c31d", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Blaster",
+            "id": "be45-1701-74dd-87c6",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F(N)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough (3), Corruptor, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Phalanx (Port & Stbd)",
+        "id": "cc51-db53-c30b-46f1",
+        "comment": "3+/3/2 F/S(L+R) Lnk(1) Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a949-4222-7d39-9c5e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d1c5-8d49-6c5d-a177", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Scald", "id": "9cd7-cbc1-5e73-0c63", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"},
+          {"name": "Linked (X)", "id": "12ca-7a80-6d77-2ce6", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Oculus Beam Phalanx, Port",
+            "id": "b90a-8a0c-046e-6417",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1), Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "Oculus Beam Phalanx, Starboard",
+            "id": "eeab-9351-4fd6-2e3b",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1), Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Phalanx (Port & Stbd)",
+        "id": "d430-28e1-ccd1-8b3a",
+        "comment": "3+/3/2 F/S(L+R) Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "06bc-99e6-b56f-17f8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "842e-1826-6c57-12f3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "26b9-eb8c-2eff-5fec", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beam Phalanx, Port",
+            "id": "ba48-5b67-4f74-c3e3",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "Oculus Beam Phalanx, Starboard",
+            "id": "f203-859a-c64d-fe23",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Array (Stbd & Port)",
+        "id": "b8fd-bf50-7e12-9a47",
+        "comment": "3+/2/2 F/S(R+L) Lnk(1//2) Scald",
+        "defaultAmount": 2,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7849-1462-26ff-8964-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "7849-1462-26ff-8964-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "infoLinks": [
+          {"name": "Scald", "id": "1677-fc48-e177-5e43", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"},
+          {"name": "Linked (X)", "id": "c6f2-3610-7742-62f9", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Oculus Beam Array, Starboard",
+            "id": "69e3-34bb-0abf-ef92",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1), Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "Oculus Beam Array, Port",
+            "id": "11e0-c4c5-ecf4-9053",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (2), Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Array (Port & Stbd)",
+        "id": "d0f8-a4e9-70e8-7dc3",
+        "comment": "3+/2/2 F/S(L+R) Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7702-fdd7-6c31-bed4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "72f0-2b0d-21e4-167c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "a5bc-8276-5283-9872", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beam Array, Port",
+            "id": "7934-d1ea-c447-090a",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "Oculus Beam Array, Starboard",
+            "id": "af3c-18cd-fecd-0f9e",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Array",
+        "id": "6295-a840-0d1b-b7c0",
+        "comment": "3+/3/2 F Lnk(1) Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a2cb-e27d-44fe-9bb4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "dd09-0324-6ca3-415b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Scald", "id": "a01f-400b-130c-30ba", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"},
+          {"name": "Linked (X)", "id": "e458-75ef-28f3-38b3", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Oculus Array",
+            "id": "fb36-8aeb-48dd-b90a",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1), Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Array",
+        "id": "ae4d-ef4d-2485-c9cd",
+        "comment": "3+/3/2 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7ef7-52ec-a2e4-0861", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9bf5-6817-ce19-50bd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "da58-bea1-f784-a67f", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Array",
+            "id": "d29c-e016-c064-b02d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "3", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Array",
+        "id": "fc65-1224-a0e6-3cd0",
+        "comment": "3+/2/2 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6745-81b9-ce87-1ae7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "299c-39f3-c1e9-b371", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "04f9-1c45-c2a7-78c3", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Array",
+            "id": "6756-2422-8685-db01",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Beams",
+        "id": "c085-1b6a-34b4-fd16",
+        "comment": "3+/1/2 F/S Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b55c-46da-bbb1-2cc8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5a18-e387-e0de-a094", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "db56-6e1b-9f09-04af", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beams",
+            "id": "07b1-6442-69d3-759d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Beams",
+        "id": "8fa9-f53f-b885-731b",
+        "comment": "3+/1/2 F Scald (x2)",
+        "defaultAmount": 2,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "0c89-4974-4692-1175", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "b120-257f-3c32-9b0d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "infoLinks": [
+          {"name": "Oculus Beams", "id": "fdaa-948a-39c5-a154", "hidden": false, "targetId": "c3ef-d985-372f-d97c", "type": "profile"},
+          {"name": "Scald", "id": "e89e-851d-53bc-1b06", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Oculus Beams",
+        "id": "cbb7-b787-73f8-cf8f",
+        "comment": "3+/1/2 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8530-d76b-4d44-84dd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a4d4-90a0-62d7-85d5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Scald", "id": "fd42-2e73-8dcf-d62d", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"},
+          {"name": "Oculus Beams", "id": "a8a9-c74f-ba7e-1382", "hidden": false, "targetId": "c3ef-d985-372f-d97c", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Oculus Rays",
+        "id": "0915-dc82-7a46-0874",
+        "comment": "3+/1/1 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "70de-aa9a-6c0d-4fda", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "369d-7b5b-5587-9ca5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "9365-28ab-77ac-3537", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Rays",
+            "id": "ea84-9426-1756-4f44",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Crest",
+        "id": "4bfd-b4ef-302f-9422",
+        "comment": "3+/2/2 F Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "4803-d1d8-54a2-4c8e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7e5c-d4eb-4546-1801", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald", "id": "dd43-694f-62a1-1128", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beam Crest",
+            "id": "8753-f601-f332-afc2",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mega P. Lance Batt",
+        "id": "eab2-a61e-e8a4-45cd",
+        "comment": "4+/6/2 F/S Cal(H&S)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9bbd-a69a-a7cb-6b9f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9915-ce77-8200-b99c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Calibre (X)", "id": "9b8b-4c5d-8451-9255", "hidden": false, "targetId": "3290-a288-d618-2403", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Mega Plasma Lance Battery",
+            "id": "d3ff-57c8-6f19-a5a9",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "6", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Calibre (H&S)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Tempest",
+        "id": "0dd8-8aea-6bd9-9a6b",
+        "comment": "3+/11/1 F/S CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "cf19-ec04-de51-b886", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3680-8a90-4cf1-bf1d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "9d10-2b72-1752-b632", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "66b0-7827-10e1-f0a2", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Tempest",
+            "id": "f718-dce2-f3fa-37ab",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "11", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Flood",
+        "id": "6d3e-ad09-4da0-4658",
+        "comment": "3+/10/1 F/S/R CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "272c-8ba3-ecb1-f6d8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "924b-8da5-030f-2b15", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "d9f9-daf5-f8de-9e1d", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "3fa7-2bb3-716d-8055", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Flood",
+            "id": "e231-fed9-94bd-5569",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "10", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Cyclone",
+        "id": "b919-b196-794e-7836",
+        "comment": "2+/6/1 F/S/R CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "73f1-a93f-b75c-687c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6960-1d69-ba69-286d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "c000-7665-8c7a-01f1", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "f7b3-335b-6f4d-c266", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Cyclone",
+            "id": "20c4-0f7c-5bab-6bfb",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "6", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Storm",
+        "id": "8760-e59b-8673-6655",
+        "comment": "3+/6/1 F/S/R CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "4f04-9581-5be0-4c25", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b414-6611-52f3-aa0e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "5a3b-2e3c-8828-ed6c", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "8aee-ecd5-203e-e892", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Storm",
+            "id": "2e57-b175-bd1c-3602",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "6", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Squall",
+        "id": "d6e8-33f9-6149-66a9",
+        "comment": "4+/4/1 F/S/R AtA CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9efe-9df4-7815-1730", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "346e-a5bc-1fa9-750a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Air-to-Air", "id": "0523-3815-e0fc-ea6f", "hidden": false, "targetId": "c3e1-6bee-9e1e-8f27", "type": "rule"},
+          {"name": "Close Action", "id": "9093-b832-5447-ee61", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "fb6b-c7ef-baa2-c88a", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Squall",
+            "id": "56f8-a3ee-27ac-68bc",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Air-to-Air, Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Squall",
+        "id": "280b-b814-fff6-a723",
+        "comment": "3+/4/1 F/S/R CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1074-9505-e637-0027", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "79f0-afbe-d752-2639", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "2dd4-5d9b-8f1c-470e", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "8e61-afaa-2c77-061a", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Squall",
+            "id": "52e4-22de-784f-662e",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Cloud",
+        "id": "db14-e05c-f636-5c4c",
+        "comment": "3+/2/1 F/S/R CA Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8cb7-6727-7196-3bae", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "29e5-b761-ce70-73d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "d12d-c35a-2d36-eec9", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Scald", "id": "6757-d9c3-a520-371a", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Cloud",
+            "id": "e210-5cb6-3643-f6ab",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Brand",
+        "id": "9cd4-5908-a37d-c181",
+        "comment": "4+/2/2 F CA(B)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "782b-42eb-529e-af0b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3e92-25d7-0d18-8674", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Close Action (Beam)", "id": "1a46-877b-ce43-6576", "hidden": false, "targetId": "b190-a6a9-c262-b6d0", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Plasma Brand",
+            "id": "7b91-ca9a-6d99-64da",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action (Beam)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Torch",
+        "id": "399f-0954-9837-4a6f",
+        "comment": "4+/2/1 F CA(B)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "560a-8f81-ecd4-43bd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1a3e-0b80-c425-85b4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Close Action (Beam)", "id": "07a3-47ae-6afe-931f", "hidden": false, "targetId": "b190-a6a9-c262-b6d0", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Plasma Torch",
+            "id": "1baf-a9d5-97fa-f87a",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action (Beam)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Bombs",
+        "id": "b2b8-0370-5d4b-f5a1",
+        "comment": "4+/4/1 F/S Bomb Low Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9036-f721-7b53-16fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "176c-a0c5-5eab-55d2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bombardment", "id": "26bb-2487-a40e-b30d", "hidden": false, "targetId": "9e06-f148-f8a3-26fb", "type": "rule"},
+          {"name": "Low Level", "id": "6b81-c6ee-cef4-db5e", "hidden": false, "targetId": "6d0f-db40-ebb6-7a1f", "type": "rule"},
+          {"name": "Scald", "id": "1e83-993f-1654-a1fd", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Bombs",
+            "id": "bad7-5de2-a624-1580",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Bombardment, Low Level, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Bombs",
+        "id": "e876-4b1c-c06b-2d84",
+        "comment": "3+/2/1 F/S Bomb",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c29b-9ee6-ed7d-c930", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0720-5530-4692-3d1d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bombardment", "id": "6fb8-fee9-f62a-d0c5", "hidden": false, "targetId": "9e06-f148-f8a3-26fb", "type": "rule"},
+          {"name": "Low Level", "id": "d4ef-aa04-3985-5aa8", "hidden": false, "targetId": "6d0f-db40-ebb6-7a1f", "type": "rule"},
+          {"name": "Scald", "id": "cd6c-bd73-20b4-9b29", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Bombs",
+            "id": "5566-3d7e-a38b-71a5",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Bombardment, Low Level, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reverse Grav-Cannon",
+        "id": "96e2-c563-0203-1910",
+        "comment": "3+/2/1 F/S EscVel",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3a48-a712-0bd8-e288", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d36e-5918-c305-2cbd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Escape Velocity", "id": "bf64-952f-23c3-c4d8", "hidden": false, "targetId": "acfb-b2b0-1b53-d429", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Reverse Grav-Cannon",
+            "id": "ac65-3f01-6090-1b9c",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Escape Velocity", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Seekers",
+        "id": "3ed3-c802-95b9-bd30",
+        "comment": "3+/4/1 F/S/R CA ReEnt Scald",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "565d-bcad-141f-9a01", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "074a-1b6b-4e00-e160", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "db9b-7cba-e956-2bf8", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"},
+          {"name": "Re-Entry", "id": "c1c3-0d75-73bc-ed56", "hidden": false, "targetId": "9f1d-3ad9-31e0-99c5", "type": "rule"},
+          {"name": "Scald", "id": "7a63-e99d-13f5-d485", "hidden": false, "targetId": "c7fa-b054-49d7-e9d5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Seekers",
+            "id": "2bed-a203-dbe6-a478",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action, Re-Entry, Scald", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {"name": "----- Load -----", "id": "22fa-9f6a-e1ba-51c8", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Fighters & Bombers",
+        "id": "5939-e496-5521-3404",
+        "collective": true,
+        "comment": "8",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ad65-a8c7-15d6-cd6d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "305e-a5bd-1bfa-f134", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "3caa-188f-eed5-8908", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 8}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "d029-20ef-e058-1ae0",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "8", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "f351-3ea0-c91c-a392",
+        "collective": true,
+        "comment": "5",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3a4a-6376-7bb1-4ac8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "98b6-ba3c-0409-4db8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "e883-5fd4-3ecd-a688", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 5}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "3c46-2dd5-f4e3-ca97",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "5", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "7b64-a0e8-6f27-f8fb",
+        "collective": true,
+        "comment": "4",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "92a1-0ac3-2548-5ec2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7122-6d7a-3e43-262f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "8d76-8e07-bc26-fe45", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 4}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "20a9-5b9c-b997-5795",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "d8ac-a98d-95d1-45fd",
+        "collective": true,
+        "comment": "3",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c69a-6390-2324-9002", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "bd45-6ce2-a96b-628a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "cac3-b8c8-95f1-b9c4", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 3}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "9bc7-a410-792e-44f1",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "0620-a3c0-df38-2e12",
+        "collective": true,
+        "comment": "2",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "cd85-1e68-92ff-3731", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d771-c533-a7f1-e3ef", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "59c4-5d63-1ed6-a241", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 2}],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "5af8-02e2-8b1b-534a",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Bulk Landers",
+        "id": "cf4b-9b82-557e-86f5",
+        "collective": true,
+        "comment": "2",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "2e41-9e39-1ce0-9c0a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "542e-d989-9dec-99ff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "3e86-e74b-be7d-f526", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 2}],
+        "profiles": [
+          {
+            "name": "Bulk Landers",
+            "id": "ab9b-6213-1ca4-bfb6",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Bulk Landers",
+        "id": "205c-0a3e-c8fa-68c6",
+        "collective": true,
+        "comment": "1",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e217-aef3-16d4-bd0c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "109e-010b-48f9-e855", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "1111-13ea-d275-3b55", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 1}],
+        "profiles": [
+          {
+            "name": "Bulk Landers",
+            "id": "7ad8-459f-efb9-7584",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Dropships",
+        "id": "8194-5e71-4d38-b252",
+        "collective": true,
+        "comment": "1",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7bfe-8548-ad82-5e21", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c3e9-6926-7e92-db5b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "349f-8036-148d-5b95", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 1}],
+        "profiles": [
+          {
+            "name": "Dropships",
+            "id": "1180-f6bb-561d-ce7a",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Torpedo",
+        "id": "5e62-ec27-5182-2706",
+        "collective": true,
+        "comment": "1 Corr L(2) (x2)",
+        "defaultAmount": 2,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9999-d7fd-1a16-5147", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "a788-946e-b110-0e8a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Launch", "id": "b051-16e9-71ed-5ab1", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"},
+          {"name": "Torpedo", "id": "0e75-e8db-d1de-3195", "hidden": false, "targetId": "d27f-0726-bc98-747f", "type": "profile"},
+          {"name": "Corruptor", "id": "1c21-006e-36d8-ee8d", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "L (X)", "id": "7857-2ddf-ed84-eefb", "hidden": false, "targetId": "6920-7d49-9ec8-1e76", "type": "rule"}
+        ],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 1}]
+      },
+      {
+        "name": "Torpedo",
+        "id": "8e94-fcda-de7c-9ec3",
+        "collective": true,
+        "comment": "1 Corr L(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6476-132f-8d74-2dad", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b249-4064-0aae-c274", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Launch", "id": "ec56-75e5-7d9e-d2b1", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"},
+          {"name": "Torpedo", "id": "c7ee-9d54-d500-c61e", "hidden": false, "targetId": "d27f-0726-bc98-747f", "type": "profile"},
+          {"name": "Corruptor", "id": "8872-f50c-4f64-8632", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "L (X)", "id": "0a2a-a057-51cf-307a", "hidden": false, "targetId": "6920-7d49-9ec8-1e76", "type": "rule"}
+        ],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 1}]
+      },
+      {"name": "----- Equipment -----", "id": "f12a-f60d-8275-2276", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Cloaking Crest",
+        "id": "f160-1a9d-ad3f-2780",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8f97-3028-b3ad-31a1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "412c-0021-348d-1ffd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "e888-2584-886f-7f2c",
+            "type": "increment",
+            "value": 5,
+            "repeats": [{"childId": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}]
+          },
+          {
+            "affects": "childs.recursive.model.profiles.Ship",
+            "field": "4717-adad-0be5-3c60",
+            "join": ", ",
+            "scope": "parent",
+            "type": "append",
+            "value": "Stealth, Partial Cloak"
+          },
+          {"affects": "childs.recursive.model.rules", "field": "hidden", "scope": "parent", "type": "set", "value": false}
+        ],
+        "profiles": [
+          {
+            "name": "Cloaking Crest",
+            "id": "9192-466b-b976-5f2f",
+            "hidden": false,
+            "typeId": "6555-0acd-7514-65a9",
+            "typeName": "Equipment",
+            "characteristics": [{"name": "Description", "$text": "This ship may take a Cloaking Crest for +5pts and gains Stealth and Partial Cloak.", "typeId": "15b2-a53d-e933-4f06"}]
+          }
+        ]
+      }
+    ]
+  }
+}
