@@ -1,0 +1,1156 @@
+{
+  "catalogue": {
+    "name": "Multi-faction",
+    "id": "edb7-ec70-1989-b4b3",
+    "authorName": "John Kemp",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander/issues",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "bb34-1413-3527-b957",
+    "gameSystemRevision": 17,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "sharedRules": [
+      {
+        "name": "Magellan Lifeboats",
+        "id": "d6e0-01b9-720a-7b9b",
+        "description": "If this ship is destroyed with an Admiral assigned to it, you may transfer your Admiral to another friendly ship of H or S Tonnage within 18”.",
+        "hidden": false
+      },
+      {
+        "name": "Advanced Artillery",
+        "id": "aaea-4518-4296-0877",
+        "description": "This ship may fire its N-12 Artillery Cannons while on the Max Thrust and Silent Running Special Orders.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {"name": "----- Ships -----", "id": "fb85-98fe-96c8-abd1", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Pungari Thresher Hive Ship",
+        "id": "91db-c1d9-41b6-06f2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 18,
+        "publicationId": "da17-7d78-79da-7077",
+        "type": "model",
+        "categoryLinks": [{"name": "Heavy", "id": "28d3-4b15-a753-0e08", "hidden": false, "primary": true, "targetId": "1342-a92d-424c-140a"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 150},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 10}
+        ],
+        "entryLinks": [
+          {
+            "name": "Boarding Pods (Front)",
+            "id": "55cf-bda5-6897-95eb",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "468b-b193-3553-172e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Boarding Pods (Stbd & Port)",
+            "id": "1268-e4ef-6ef8-f765",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "4322-3e6b-1b0c-551c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Pungari Bulk Landers",
+            "id": "9368-551c-38d1-a49d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "1b65-a31c-47e5-52cf",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Pungari Bombers",
+            "id": "454b-6911-36bc-ec10",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "a2a5-6ba2-bb76-6f21",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Reinforced Armour", "id": "4163-3ab3-9d0c-b69d", "hidden": false, "targetId": "8560-b10d-f4cb-d837", "type": "rule"},
+          {"name": "Rare", "id": "e9e0-ebc1-a032-ffbd", "hidden": false, "targetId": "becc-b3c9-c26c-abde", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Thresher",
+            "id": "82ac-a7b2-6ea1-103e",
+            "hidden": false,
+            "typeId": "ecce-1380-e182-c89e",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Scan", "$text": "4\"", "typeId": "a704-f2fa-371d-9dab"},
+              {"name": "Sig", "$text": "6\"", "typeId": "1402-313c-914d-f053"},
+              {"name": "Thrust", "$text": "6\"", "typeId": "5033-56fa-1878-bbff"},
+              {"name": "Hull", "$text": "14", "typeId": "6277-95e1-d5cd-6d06"},
+              {"name": "A", "$text": "3+", "typeId": "41bf-5c81-5b4b-0aec"},
+              {"name": "PD", "$text": "4", "typeId": "47c4-a3c6-1e57-306b"},
+              {"name": "G", "$text": "1", "typeId": "7396-9d6c-953f-4c4b"},
+              {"name": "T", "$text": "H", "typeId": "5c7d-d46b-9c5f-4ac3"},
+              {"name": "Special", "$text": "Launch, Rare, Reinforced Armour", "typeId": "4717-adad-0be5-3c60"}
+            ],
+            "modifiers": [
+              {
+                "field": "41bf-5c81-5b4b-0aec",
+                "join": "",
+                "type": "append",
+                "value": "/6+",
+                "conditions": [
+                  {
+                    "childId": "c240-e6a9-6a41-8643",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Centurion Grand Cruiser",
+        "id": "c2d4-cebd-6609-c177",
+        "hidden": false,
+        "import": true,
+        "page": 14,
+        "publicationId": "71d6-14ad-06a1-10e4",
+        "type": "model",
+        "categoryLinks": [{"name": "Heavy", "id": "7c40-2255-8cb9-7791", "primary": true, "targetId": "1342-a92d-424c-140a"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 135},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 10}
+        ],
+        "entryLinks": [
+          {
+            "name": "XN-31 Pair",
+            "id": "cc5d-f775-b709-3fd9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "ffb3-86e8-f46f-31cb",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "N-31 Hybrid Battery (Port & Stbd)",
+            "id": "4c4d-4598-0032-1fed",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "e44c-f2ed-607c-2feb",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "NC-3 Missiles",
+            "id": "928e-7d57-a75f-abab",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "79ea-671f-2e64-5215",
+            "type": "selectionEntry"
+          },
+          {"name": "Flagship (H)", "id": "8a47-ee56-f4b7-96aa", "hidden": false, "import": true, "targetId": "f413-1384-f5c6-44c1", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Ablative Armour", "id": "3d43-1aea-3aff-9d37", "hidden": false, "targetId": "38d0-f9e6-a208-1f17", "type": "rule"},
+          {
+            "name": "Rare",
+            "id": "7b80-4480-18c7-d673",
+            "hidden": true,
+            "targetId": "becc-b3c9-c26c-abde",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [{"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Centurion",
+            "id": "6aa1-fe36-78c4-e779",
+            "hidden": false,
+            "typeId": "ecce-1380-e182-c89e",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Scan", "$text": "4\"", "typeId": "a704-f2fa-371d-9dab"},
+              {"name": "Sig", "$text": "6\"", "typeId": "1402-313c-914d-f053"},
+              {"name": "Thrust", "$text": "7\"", "typeId": "5033-56fa-1878-bbff"},
+              {"name": "Hull", "$text": "15", "typeId": "6277-95e1-d5cd-6d06"},
+              {"name": "A", "$text": "2+", "typeId": "41bf-5c81-5b4b-0aec"},
+              {"name": "PD", "$text": "3", "typeId": "47c4-a3c6-1e57-306b"},
+              {"name": "G", "$text": "1-2", "typeId": "7396-9d6c-953f-4c4b"},
+              {"name": "T", "$text": "H", "typeId": "5c7d-d46b-9c5f-4ac3"},
+              {"name": "Special", "$text": "Ablative Armour", "typeId": "4717-adad-0be5-3c60"}
+            ],
+            "modifiers": [
+              {
+                "field": "4717-adad-0be5-3c60",
+                "join": "",
+                "type": "append",
+                "value": ", Rare",
+                "conditions": [{"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyperyacht Aurorum",
+        "id": "abac-3155-16f2-3235",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 25,
+        "publicationId": "71d6-14ad-06a1-10e4",
+        "type": "model",
+        "categoryLinks": [{"name": "Heavy", "id": "d641-8ccb-6f2b-e7f4", "hidden": false, "primary": true, "targetId": "1342-a92d-424c-140a"}],
+        "constraints": [
+          {
+            "id": "d78d-8ac5-d314-1ecb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 90},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 2},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 2}
+        ],
+        "entryLinks": [{"name": "9K Snub", "id": "fdd9-ebfe-e660-336b", "hidden": false, "import": true, "sortIndex": 1, "targetId": "553a-a9dd-88cb-3bb2", "type": "selectionEntry"}],
+        "infoLinks": [{"name": "Stealth", "id": "39ad-2dba-8abb-2156", "hidden": false, "targetId": "8670-fbd9-e48c-da59", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hyperyacht Aurorum",
+            "id": "21d9-7395-0614-9eb9",
+            "hidden": false,
+            "typeId": "ecce-1380-e182-c89e",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "a704-f2fa-371d-9dab"},
+              {"name": "Sig", "$text": "4\"", "typeId": "1402-313c-914d-f053"},
+              {"name": "Thrust", "$text": "9\"", "typeId": "5033-56fa-1878-bbff"},
+              {"name": "Hull", "$text": "6", "typeId": "6277-95e1-d5cd-6d06"},
+              {"name": "A", "$text": "4+", "typeId": "41bf-5c81-5b4b-0aec"},
+              {"name": "PD", "$text": "2", "typeId": "47c4-a3c6-1e57-306b"},
+              {"name": "G", "$text": "1", "typeId": "7396-9d6c-953f-4c4b"},
+              {"name": "T", "$text": "L2", "typeId": "5c7d-d46b-9c5f-4ac3"},
+              {"name": "Special", "$text": "Launch, Stealth, Mercenary", "typeId": "4717-adad-0be5-3c60"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Mercenary",
+            "id": "292a-6a00-0a56-a03c",
+            "description": "This ship may be used in any Fleet, but you may only include a single Hyperyacht Aurorum in your fleet, regardless of game size. This ship’s Fighters & Bombers use the stats of its parent fleet.",
+            "hidden": false,
+            "page": 1,
+            "publicationId": "ea5f-c489-443b-35fa"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "8488-5faa-0830-7b28",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "c1d5-401d-2591-e5cf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d72a-ab3e-42e7-0edc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Launch", "id": "f572-5ceb-095c-5267", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Fighters & Bombers",
+                "id": "41b2-7014-3b98-5b62",
+                "hidden": false,
+                "typeId": "f174-1347-6969-af9b",
+                "typeName": "Load",
+                "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Palatine Command Barge",
+        "id": "3f5b-d59d-96a0-d71d",
+        "hidden": false,
+        "import": true,
+        "page": 13,
+        "publicationId": "71d6-14ad-06a1-10e4",
+        "type": "model",
+        "categoryLinks": [{"name": "Heavy", "id": "9860-3216-6d42-1139", "primary": true, "targetId": "1342-a92d-424c-140a"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 185},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 10}
+        ],
+        "entryLinks": [
+          {"name": "Flagship (H)", "id": "70d9-8681-c4b2-e829", "hidden": false, "import": true, "targetId": "f413-1384-f5c6-44c1", "type": "selectionEntry"},
+          {
+            "name": "N-12 Artillery Cannon Turrets",
+            "id": "35ec-b288-0620-eb91",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "25c7-49fc-4e95-1ca8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "NC-3 Missiles",
+            "id": "af02-335a-0888-57c4",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "79ea-671f-2e64-5215",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Ablative Armour", "id": "cc5d-532d-b64e-1380", "hidden": false, "targetId": "38d0-f9e6-a208-1f17", "type": "rule"},
+          {"name": "Detector", "id": "cc67-533b-29e7-90fb", "hidden": false, "targetId": "d671-a199-2d13-3b64", "type": "rule"},
+          {"name": "Magellan Lifeboats", "id": "665a-50ff-a34c-926b", "hidden": false, "targetId": "d6e0-01b9-720a-7b9b", "type": "rule"},
+          {"name": "Advanced Artillery", "id": "cffa-94b5-98fd-977c", "hidden": false, "targetId": "aaea-4518-4296-0877", "type": "rule"},
+          {
+            "name": "Rare",
+            "id": "a71e-2f66-27af-de3d",
+            "hidden": true,
+            "targetId": "becc-b3c9-c26c-abde",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [{"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Palatine",
+            "id": "c8a4-d697-abb8-f286",
+            "hidden": false,
+            "typeId": "ecce-1380-e182-c89e",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Scan", "$text": "12\"", "typeId": "a704-f2fa-371d-9dab"},
+              {"name": "Sig", "$text": "4\"", "typeId": "1402-313c-914d-f053"},
+              {"name": "Thrust", "$text": "8\"", "typeId": "5033-56fa-1878-bbff"},
+              {"name": "Hull", "$text": "15", "typeId": "6277-95e1-d5cd-6d06"},
+              {"name": "A", "$text": "2+", "typeId": "41bf-5c81-5b4b-0aec"},
+              {"name": "PD", "$text": "12", "typeId": "47c4-a3c6-1e57-306b"},
+              {"name": "G", "$text": "1", "typeId": "7396-9d6c-953f-4c4b"},
+              {"name": "T", "$text": "H", "typeId": "5c7d-d46b-9c5f-4ac3"},
+              {"name": "Special", "$text": "Ablative Armour, Detector, Magellan Lifeboats, Advanced Artillery", "typeId": "4717-adad-0be5-3c60"}
+            ],
+            "modifiers": [
+              {
+                "field": "4717-adad-0be5-3c60",
+                "join": "",
+                "type": "append",
+                "value": ", Rare",
+                "conditions": [{"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pungari Thresher Hive Ship",
+        "id": "3396-8933-0ee5-0c69",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "constraints": [
+          {
+            "id": "ca2d-e32f-e7e9-bfbb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Pungari Thresher Hive Ship",
+            "id": "f1db-a729-9333-58e1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "91db-c1d9-41b6-06f2",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "427b-d266-3545-e078",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "7bb8-ca0c-6b65-ddbf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "ca2d-e32f-e7e9-bfbb",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "b897-0836-3935-a949",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "field": "ca2d-e32f-e7e9-bfbb",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "ddf7-2d82-8a0f-adbd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Centurion Grand Cruisers",
+        "id": "0483-4ffa-7e63-bb82",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "constraints": [
+          {
+            "id": "dfc2-18b6-0204-17a1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Centurion Grand Cruiser",
+            "id": "8859-d27f-768c-e1fd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c2d4-cebd-6609-c177",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "5b1f-fc31-9f2c-4c70",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "87e1-843f-4e35-cc4d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "dfc2-18b6-0204-17a1",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "45c0-0980-7ede-27b1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "dfc2-18b6-0204-17a1",
+            "type": "set",
+            "value": 2,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "b897-0836-3935-a949",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "dfc2-18b6-0204-17a1",
+            "type": "set",
+            "value": 3,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "ddf7-2d82-8a0f-adbd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyperyacht Aurorum",
+        "id": "cc03-54c7-704d-d966",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "constraints": [{"id": "882a-c578-b1f0-48cb", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Hyperyacht Aurorum",
+            "id": "b0e5-1740-1998-ba88",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "abac-3155-16f2-3235",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "57c1-93bf-2508-667a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0173-475d-a941-ae22",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Palatine Command Barge",
+        "id": "f037-c598-d6fe-3356",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "constraints": [
+          {
+            "id": "d130-65b7-cd79-fe11",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Palatine Command Barge",
+            "id": "abe5-a7ca-5f0b-3896",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3f5b-d59d-96a0-d71d",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "36b7-8430-d0b0-1ee1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "6d22-22df-c469-44ed",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "d130-65b7-cd79-fe11",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "45c0-0980-7ede-27b1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "d130-65b7-cd79-fe11",
+            "type": "set",
+            "value": 2,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "b897-0836-3935-a949",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "d130-65b7-cd79-fe11",
+            "type": "set",
+            "value": 3,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "5810-52c0-23f0-8f9f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {
+                    "childId": "ddf7-2d82-8a0f-adbd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "----- Weapons -----", "id": "5478-1361-3667-552d", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "XN-31 Pair",
+        "id": "ffb3-86e8-f46f-31cb",
+        "collective": true,
+        "comment": "2+/2/1 F/S Fus(2)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d0d3-d0a3-50f4-3204", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a273-56e2-9859-3737", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Fusillade (X)", "id": "e4a6-ca10-01c0-4bb0", "hidden": false, "targetId": "657f-18a5-dde4-5342", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "XN-31 Mass Driver Turret Pair",
+            "id": "2c63-8941-df8e-fbaa",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Fusillade (2)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-31 Hybrid Battery (Port & Stbd)",
+        "id": "e44c-f2ed-607c-2feb",
+        "collective": true,
+        "comment": "4+/8/1 S(L+R) Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b7a3-daa0-9673-5e1c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b189-8273-bd72-5312", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Linked (X)", "id": "5330-0352-b55b-a669", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "N-31 Hybrid Gun Battery (Port)",
+            "id": "da2f-c7e5-c757-79e4",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "N-31 Hybrid Gun Battery (Starboard)",
+            "id": "4e4d-3398-381f-636b",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "9K Snub",
+        "id": "553a-a9dd-88cb-3bb2",
+        "collective": true,
+        "comment": "2+/4/1 F",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "5896-f487-a766-901a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "52d7-aa92-0e31-b4c3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "9K Snub Mass Drivers",
+            "id": "15f5-8788-aabc-9fed",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NC-3 Missiles",
+        "id": "79ea-671f-2e64-5215",
+        "collective": true,
+        "comment": "4+/2/1 F/S/R CA",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "0d08-0a44-5779-5cad", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "2ebd-4cd3-56e4-47e1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "7967-1ddc-31c1-0767", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "NC-3 Missiles",
+            "id": "8693-69d0-96f7-d222",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-12 Artillery Cannon Turrets",
+        "id": "25c7-49fc-4e95-1ca8",
+        "collective": true,
+        "comment": "4+/8/1 F",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a68f-93d1-3e4a-c0db", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f5ce-f9df-7326-31b6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "N-12 Artillery Cannon Turrets",
+            "id": "1934-db39-588c-619b",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "8", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boarding Pods (Front)",
+        "id": "468b-b193-3553-172e",
+        "collective": true,
+        "comment": "4+/4/1 F Corr",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e997-3363-1e22-7802", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0066-0f0b-4232-4005", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Corruptor", "id": "68e3-60d5-636f-2145", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Boarding Pods (Front)",
+            "id": "3bd8-d32f-39f6-0eb5",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Corruptor", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boarding Pods (Stbd & Port)",
+        "id": "4322-3e6b-1b0c-551c",
+        "collective": true,
+        "comment": "4+/4/1 S(R+L) Corr Lnk(1)",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "30cd-fd55-dfba-602b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3eb0-0f9d-0196-eb45", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Corruptor", "id": "01f1-3980-0eb9-7ca7", "hidden": false, "targetId": "c334-0240-1cae-8db7", "type": "rule"},
+          {"name": "Linked (X)", "id": "ad24-d023-db2e-b3bb", "hidden": false, "targetId": "08ea-9db1-110b-0150", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Boarding Pods (Starboard)",
+            "id": "ec8b-fd9f-855a-72c1",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "S(R)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Corruptor, Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          },
+          {
+            "name": "Boarding Pods (Port)",
+            "id": "c06b-dc18-863d-775d",
+            "hidden": false,
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "4+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "S(L)", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Corruptor, Linked (1)", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pungari Bombers",
+        "id": "a2a5-6ba2-bb76-6f21",
+        "collective": true,
+        "comment": "4",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "527a-04ac-aba2-a000", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0cdd-0eda-fcfe-42dd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "2f37-7237-c950-9967", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 4}],
+        "profiles": [
+          {
+            "name": "Pungari Bombers",
+            "id": "1c98-0f62-0c89-cb7b",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      },
+      {
+        "name": "Pungari Bulk Landers",
+        "id": "1b65-a31c-47e5-52cf",
+        "collective": true,
+        "comment": "2",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "400a-5db8-5d46-b1e7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "272f-937a-54b7-e7a0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Launch", "id": "0bf7-c7e0-f311-f5f8", "hidden": false, "targetId": "6af7-681c-b2c8-5acc", "type": "rule"}],
+        "modifiers": [{"field": "ac2f-9b71-e1c5-783a", "type": "increment", "value": 2}],
+        "profiles": [
+          {
+            "name": "Pungari Bulk Landers",
+            "id": "c201-2148-93b6-5daf",
+            "hidden": false,
+            "typeId": "f174-1347-6969-af9b",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "604b-2e24-d426-bf71"}, {"name": "Special", "typeId": "0574-9897-4dc9-48e8"}]
+          }
+        ]
+      }
+    ]
+  }
+}

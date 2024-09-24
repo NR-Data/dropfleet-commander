@@ -1,0 +1,3090 @@
+{
+  "gameSystem": {
+    "name": "Dropfleet Commander",
+    "id": "bb34-1413-3527-b957",
+    "authorName": "morvael; Giftgruen; John Kemp",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander/issues",
+    "battleScribeVersion": 2.03,
+    "revision": 17,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Pathfinder Battlegroups", "id": "b754-76e4-e1a6-8e7f", "hidden": false},
+      {"name": "Line Battlegroups", "id": "8407-32c8-5444-80af", "hidden": false},
+      {"name": "Vanguard Battlegroups", "id": "973e-e4cf-bf42-e98f", "hidden": false},
+      {"name": "Flag Battlegroups", "id": "343b-c1c3-5b31-5799", "hidden": false},
+      {"name": "Battlegroups", "id": "bb7a-03b7-dbdf-c542", "hidden": false},
+      {"name": "Super Heavy", "id": "a74f-2082-f5bf-33a5", "hidden": false},
+      {"name": "Heavy", "id": "1342-a92d-424c-140a", "hidden": false},
+      {"name": "Medium", "id": "d45f-e753-7ba7-3084", "hidden": false},
+      {"name": "Light", "id": "627b-146d-b78d-af3c", "hidden": false},
+      {"name": "Fleet", "id": "1096-0c29-3519-d830", "hidden": false},
+      {"name": "Clusters", "id": "d454-56c9-ca87-79ce", "hidden": false},
+      {"name": "Space Stations", "id": "6b03-f33c-554a-8571", "hidden": false},
+      {"name": "Debris Fields", "id": "7ccb-96a9-0d54-6d4e", "hidden": false},
+      {"name": "Other", "id": "bd1a-35ba-65e3-185b", "hidden": false},
+      {"name": "Flagships", "id": "7907-82a3-5278-4f8b", "hidden": false}
+    ],
+    "costTypes": [
+      {"name": "pts", "id": "e888-2584-886f-7f2c", "defaultCostLimit": -1, "hidden": false},
+      {"name": "Launch", "id": "ac2f-9b71-e1c5-783a", "defaultCostLimit": -1, "hidden": false},
+      {"name": "SR", "id": "c0c3-cb79-19ac-1dbc", "defaultCostLimit": -1, "hidden": false}
+    ],
+    "entryLinks": [
+      {
+        "name": "Large Space Station",
+        "id": "fa69-6fb1-21bd-36d8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "0d04-e909-0384-1cd6",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Large Cluster",
+        "id": "af32-3f42-ab4b-3158",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "66fd-e501-8ce7-a35f",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Medium Cluster",
+        "id": "2e91-f6cf-a8eb-7e16",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "9150-2f97-14e6-ac3c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Medium Space Station",
+        "id": "faad-aa0b-0103-280f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "3f23-ae01-996c-9dbd",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Small Cluster",
+        "id": "fd9a-a334-d290-3a4e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "9ea0-2d05-f377-5ab0",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Small Space Station",
+        "id": "e5dd-ad97-0a06-4e2f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "df4f-4a71-603a-020b",
+        "type": "selectionEntry"
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Skirmish Force",
+        "id": "45c0-0980-7ede-27b1",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Pathfinder Battlegroups",
+            "id": "e0c9-cc8f-ab0a-cc8b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b754-76e4-e1a6-8e7f",
+            "constraints": [
+              {
+                "id": "48d2-ada1-866a-4819",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "571d-8f5c-d5d4-8c06",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Line Battlegroups",
+            "id": "821d-4649-c448-6517",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8407-32c8-5444-80af",
+            "constraints": [
+              {
+                "id": "ca9b-211a-dac3-60ee",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "54df-1c34-9950-7d79",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Vanguard Battlegroups",
+            "id": "47f5-96c8-5436-36e2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "973e-e4cf-bf42-e98f",
+            "constraints": [
+              {
+                "id": "4ef1-61f3-7b53-228d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "a73a-3020-b7c0-008e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Battlegroups",
+            "id": "8842-9427-6db6-ee5f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "bb7a-03b7-dbdf-c542",
+            "constraints": [
+              {
+                "id": "ded0-42a3-8028-ab68",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Fleet",
+            "id": "7ca2-ee52-42c6-b9ee",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1096-0c29-3519-d830",
+            "constraints": [
+              {
+                "id": "5f6c-ea83-da56-d995",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "3bb5-0b0e-aac5-c2e5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Flagships",
+            "id": "7ca6-aebd-87e2-abd0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7907-82a3-5278-4f8b",
+            "constraints": [
+              {
+                "id": "5260-9f1b-5622-ab32",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "b112-c2ce-8b42-ef73",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "8ebc-d271-2758-f169",
+            "field": "ac2f-9b71-e1c5-783a",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 10
+          },
+          {
+            "id": "4bda-f929-55c3-a036",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 500
+          },
+          {
+            "id": "0e1f-309d-2019-8e74",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 999
+          }
+        ]
+      },
+      {
+        "name": "Clash Force",
+        "id": "b897-0836-3935-a949",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Battlegroups",
+            "id": "6a2a-9f3c-229a-d9b9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "bb7a-03b7-dbdf-c542",
+            "constraints": [
+              {
+                "id": "fab4-8742-d000-2dc1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Line Battlegroups",
+            "id": "b1d6-b2f7-50da-c967",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8407-32c8-5444-80af",
+            "constraints": [
+              {
+                "id": "20ba-1b4a-b80b-ccf0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "cf92-088d-f98d-6644",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Vanguard Battlegroups",
+            "id": "495e-568a-c65f-eeeb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "973e-e4cf-bf42-e98f",
+            "constraints": [
+              {
+                "id": "eb5e-81fc-fa09-7cda",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "dc0e-f852-9c6c-3590",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Pathfinder Battlegroups",
+            "id": "8246-a409-e39a-eb2e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b754-76e4-e1a6-8e7f",
+            "constraints": [
+              {
+                "id": "c856-a151-2638-b8df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "6d71-878d-b07a-fb5e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Flag Battlegroups",
+            "id": "c66b-3dca-db9e-d209",
+            "hidden": false,
+            "primary": false,
+            "targetId": "343b-c1c3-5b31-5799",
+            "constraints": [
+              {
+                "id": "b2d8-421b-9eed-a029",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "9df6-b59a-8c52-7ef8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Fleet",
+            "id": "aa83-c946-dc68-3b01",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1096-0c29-3519-d830",
+            "constraints": [
+              {
+                "id": "c7b4-f3ba-6370-912d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0084-a1de-56a3-8320",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Flagships",
+            "id": "eeb8-1d6f-12d3-280c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7907-82a3-5278-4f8b",
+            "constraints": [
+              {
+                "id": "e59f-3f5d-0b09-08ff",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "c432-d502-acad-f55c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "d59e-fbcc-77f1-8966",
+            "field": "ac2f-9b71-e1c5-783a",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 15
+          },
+          {
+            "id": "5ae7-0e7c-ea0d-0ba9",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 1000
+          },
+          {
+            "id": "6921-5183-d7d2-e9ae",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1999
+          }
+        ]
+      },
+      {
+        "name": "Battle Force",
+        "id": "ddf7-2d82-8a0f-adbd",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Battlegroups",
+            "id": "b547-7e3b-4681-a6b9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "bb7a-03b7-dbdf-c542",
+            "constraints": [
+              {
+                "id": "098a-da2c-210a-8330",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "name": "Line Battlegroups",
+            "id": "b098-57c8-04f4-f534",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8407-32c8-5444-80af",
+            "constraints": [
+              {
+                "id": "d3b3-4e62-7a39-525c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "b29c-c559-5f8b-f38a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Vanguard Battlegroups",
+            "id": "f54e-a6bf-30be-0bf4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "973e-e4cf-bf42-e98f",
+            "constraints": [
+              {
+                "id": "d408-0910-7a07-a118",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "17bb-36bc-ac7b-5543",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Pathfinder Battlegroups",
+            "id": "316a-336f-c3c4-83ce",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b754-76e4-e1a6-8e7f",
+            "constraints": [
+              {
+                "id": "617e-2444-4b47-6862",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0268-e465-f57f-3e07",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Flag Battlegroups",
+            "id": "21d0-0af9-6ed8-ef13",
+            "hidden": false,
+            "primary": false,
+            "targetId": "343b-c1c3-5b31-5799",
+            "constraints": [
+              {
+                "id": "e9ab-53d0-a926-6c69",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "05ab-b7bc-9c02-2c33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Fleet",
+            "id": "9276-3785-8f53-232a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1096-0c29-3519-d830",
+            "constraints": [
+              {
+                "id": "9760-9343-67a8-b880",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5e2f-623d-8170-56f4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Flagships",
+            "id": "bcd4-0f9c-6a9c-1b72",
+            "hidden": false,
+            "primary": false,
+            "targetId": "7907-82a3-5278-4f8b",
+            "constraints": [
+              {
+                "id": "851f-556b-9de7-ad0d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "b3ab-658a-d049-d9d1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "b7b0-4b46-45f5-0f0e",
+            "field": "ac2f-9b71-e1c5-783a",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 20
+          },
+          {
+            "id": "2974-522c-ef10-8975",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 2000
+          },
+          {
+            "id": "b761-65ef-bd9c-044f",
+            "field": "e888-2584-886f-7f2c",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "name": "Terrain",
+        "id": "053e-95bc-5ec1-51c5",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Clusters", "id": "20ce-a80a-d9a5-c1b4", "hidden": false, "primary": false, "targetId": "d454-56c9-ca87-79ce"},
+          {"name": "Space Stations", "id": "b545-9c2f-b267-ebdf", "hidden": false, "primary": false, "targetId": "6b03-f33c-554a-8571"},
+          {"name": "Debris Fields", "id": "d58c-c23a-442f-7f7f", "hidden": false, "primary": false, "targetId": "7ccb-96a9-0d54-6d4e"},
+          {"name": "Other", "id": "ad24-e8c3-bfcc-c623", "hidden": false, "primary": false, "targetId": "bd1a-35ba-65e3-185b"}
+        ]
+      }
+    ],
+    "infoLinks": [{"name": "Notes", "id": "648d-ece4-2019-6ade", "hidden": false, "targetId": "4b38-af5a-5bb1-7260", "type": "rule"}],
+    "profileTypes": [
+      {
+        "name": "Load",
+        "id": "f174-1347-6969-af9b",
+        "sortIndex": 3,
+        "characteristicTypes": [{"name": "Launch", "id": "604b-2e24-d426-bf71"}, {"name": "Special", "id": "0574-9897-4dc9-48e8"}]
+      },
+      {
+        "name": "Ship",
+        "id": "ecce-1380-e182-c89e",
+        "sortIndex": 1,
+        "characteristicTypes": [
+          {"name": "Scan", "id": "a704-f2fa-371d-9dab"},
+          {"name": "Sig", "id": "1402-313c-914d-f053"},
+          {"name": "Thrust", "id": "5033-56fa-1878-bbff"},
+          {"name": "Hull", "id": "6277-95e1-d5cd-6d06"},
+          {"name": "A", "id": "41bf-5c81-5b4b-0aec"},
+          {"name": "PD", "id": "47c4-a3c6-1e57-306b"},
+          {"name": "G", "id": "7396-9d6c-953f-4c4b"},
+          {"name": "T", "id": "5c7d-d46b-9c5f-4ac3"},
+          {"name": "Special", "id": "4717-adad-0be5-3c60"}
+        ]
+      },
+      {
+        "name": "Weapon",
+        "id": "1ddb-c7dc-57a9-b97f",
+        "sortIndex": 2,
+        "characteristicTypes": [
+          {"name": "Lock", "id": "b264-7fc5-348d-06c0"},
+          {"name": "Attacks", "id": "00d0-7374-e403-ad78"},
+          {"name": "Damage", "id": "ae4d-c88d-138f-1fcf"},
+          {"name": "Arc", "id": "61a9-ead3-7b97-32ed"},
+          {"name": "Special", "id": "008a-e561-1ceb-a0f1"}
+        ]
+      },
+      {
+        "name": "Space Station",
+        "id": "2f33-491f-7a7b-d5f5",
+        "characteristicTypes": [
+          {"name": "Scan", "id": "8536-87d2-d32f-96b5"},
+          {"name": "Sig", "id": "5e15-d424-4723-cfb0"},
+          {"name": "Thrust", "id": "714c-5a66-45f8-0f17"},
+          {"name": "Hull", "id": "7fa4-b1da-87aa-54ad"},
+          {"name": "A", "id": "41ac-cf99-497a-33b8"},
+          {"name": "PD", "id": "4f20-0a1e-3b75-f2f8"}
+        ]
+      },
+      {
+        "name": "Asset",
+        "id": "3d27-25f5-3f6e-878b",
+        "characteristicTypes": [
+          {"name": "Scan", "id": "914a-2abb-507c-2952"},
+          {"name": "Thrust", "id": "9a03-5218-efd6-3b27"},
+          {"name": "Armour", "id": "32ca-f018-cea8-bff2"},
+          {"name": "PD Bonus", "id": "48f8-4189-6e7f-e9a7"},
+          {"name": "Lock", "id": "c010-61f8-3e90-1bca"},
+          {"name": "Attacks", "id": "3b7d-3ae6-05bd-3e66"},
+          {"name": "Damage", "id": "1e07-2116-704d-c48f"},
+          {"name": "Special", "id": "d6c1-7d66-916c-88e8"}
+        ]
+      },
+      {
+        "name": "Sector",
+        "id": "2c32-5f9e-952e-1e30",
+        "characteristicTypes": [
+          {"name": "Hull", "id": "9d35-735b-a456-9535"},
+          {"name": "A", "id": "6854-a747-70a9-dc3e"},
+          {"name": "Value", "id": "e03e-9451-4084-7802"},
+          {"name": "Special", "id": "541c-a2de-0f94-bc77"}
+        ]
+      },
+      {
+        "name": "Cluster",
+        "id": "b12e-32e7-4e65-87e9",
+        "characteristicTypes": [{"name": "Scan", "id": "e183-0cbf-c34e-ed1b"}, {"name": "Hold", "id": "2291-2e61-b7dc-11f1"}, {"name": "Contest", "id": "bc31-563e-7797-6fa3"}]
+      },
+      {
+        "name": "Debris Field",
+        "id": "0786-d655-cdc7-42d3",
+        "characteristicTypes": [
+          {"name": "Lock", "id": "7cad-0cd8-c0be-af65"},
+          {"name": "Attacks", "id": "808e-2023-a4ca-2e70"},
+          {"name": "Damage", "id": "eeaa-e9a3-ddc1-1fc9"},
+          {"name": "Lock Penalty", "id": "853b-032c-9ab5-30f6"},
+          {"name": "Scan Penalty", "id": "f21a-dd5c-ad67-2490"}
+        ]
+      },
+      {
+        "name": "Equipment",
+        "id": "6555-0acd-7514-65a9",
+        "hidden": false,
+        "sortIndex": 4,
+        "characteristicTypes": [{"name": "Description", "id": "15b2-a53d-e933-4f06"}]
+      }
+    ],
+    "publications": [
+      {"name": "Dropfleet Commander Rulebook (2016)", "id": "bb34-1413-pubN67767", "shortName": "RB-16"},
+      {"name": "Princess Liner Scenarios (March 2018)", "id": "bb34-1413-pubN71061", "shortName": "PLS-1803"},
+      {"name": "Dropfleet Official Rules Update (May 2017)", "id": "bb34-1413-pubN72457", "shortName": "RU-1705"},
+      {"name": "Dropfleet FAQs and Errata v1.1", "id": "c57a-7b01-abc2-93d9", "publicationDate": "January 2017", "shortName": "FAQ-1.1"},
+      {"name": "Battle for Earth (June 2019)", "id": "07fb-79fc-ad90-6f9e", "shortName": "BFE-1906"},
+      {"name": "Pungari Tresher Experimental Rules v.1", "id": "8d8e-bcaa-3d14-b6e2", "publicationDate": "May 2019", "shortName": "PTC-1905"},
+      {"name": "Rulebook v1.7", "id": "3955-5d68-187e-60e2", "hidden": false, "publicationDate": 2023, "shortName": "RB-1.7"},
+      {"name": "FAQ & Errata v2.6.1", "id": "9636-3710-2b0a-f236", "hidden": false, "publicationDate": "December 2023", "shortName": "FAQ-2.6.1"},
+      {"name": "Civilian Ship Scenarios (Apr 2024)", "id": "ba6e-24f5-358e-f7b2", "hidden": false, "shortName": "CSS-2404"},
+      {"name": "Fleet Space Stations (Dec 2023)", "id": "49d6-e5e8-9402-7997", "hidden": false, "shortName": "FSS-2312"},
+      {"name": "UCM Ship Stat Sheets (Aug 2023)", "id": "f185-0072-424b-ef19", "hidden": false, "shortName": "UCMStats-2308"},
+      {"name": "Shaltari Ship Stat Sheets (Dec 2023)", "id": "da17-7d78-79da-7077", "hidden": false, "shortName": "ShaltariStats-2312"},
+      {"name": "Scourge Ship Stat Sheets (Apr 2024)", "id": "cb98-b8e2-3a32-a3d7", "hidden": false, "shortName": "ScourgeStats-2404"},
+      {"name": "PHR Ship Stat Sheets (Dec 2023)", "id": "6b9b-4137-d953-56b1", "hidden": false, "shortName": "PHRStats-2312"},
+      {"name": "Resistance Ship Stat Sheets (Dec 2023)", "id": "71d6-14ad-06a1-10e4", "hidden": false, "shortName": "ResistanceStats-2312"},
+      {
+        "name": "Github",
+        "id": "6d23-876f-7007-f611",
+        "hidden": false,
+        "publisherUrl": "https://github.com/BSData/dropfleet-commander",
+        "shortName": "BSData/dropfleet-commander"
+      }
+    ],
+    "sharedRules": [
+      {"name": "Notes", "id": "4b38-af5a-5bb1-7260", "description": "It's best to let Launch and SR cost limits remain at -1 when creating rosters.", "hidden": false},
+      {
+        "name": "Ablative Armour",
+        "id": "38d0-f9e6-a208-1f17",
+        "description": "A ship with Ablative Armour increases its Armour by 2 points (e.g. 5+ Armour becomes 3+ Armour) until it is Crippled. At that point this bonus is lost for the rest of the game.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Aegis (X)",
+        "id": "f7b4-257c-0fc5-8fe3",
+        "description": "Ships with the Aegis special rule add a bonus to the Point Defence value of any friendly ships within 4” of them equal to X. In order to be affected, ships must be on the same Orbital Layer as the Aegis ship. This bonus also applies to the Aegis ship itself.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Aegis (4)", "Aegis (6)", "Aegis (7)", "Aegis (8)", "Aegis (9)"]
+      },
+      {
+        "name": "Air-to-Air",
+        "id": "c3e1-6bee-9e1e-8f27",
+        "description": "While in atmosphere, weapons with this rule ignore the usual penalty to Lock Value and gain -1 to their Lock value when firing at ships in atmosphere. All other penalties still apply, including needing a 6+ to shoot at ground targets. Air to Air weapons gain no benefit from this rule when firing from outside atmosphere. Air to Air weapons that also have the Close Action rule may be fired at targets in atmosphere in addition to other Orbital Layers.",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Alt-X",
+        "id": "bfbc-e83a-c2b7-eb15",
+        "description": "A weapon system with Alternate fire modes will be represented by two or more lines on the weapon system characteristics with Alt followed by a number (e.g. Alt-1) in the special section. Only one weapon system with the same Alt number on the weapon characteristics may be fired by the same ship each turn.",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Alt-1"]
+      },
+      {
+        "name": "Atmospheric",
+        "id": "32d9-8628-d42c-4ddd",
+        "description": "Only ships with the Atmospheric special rule may enter the Atmospheric orbital layer.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Beast",
+        "id": "1889-ce97-ec0b-7f2b",
+        "description": "When this ship suffers a Crippling Damage result, it gains a -1 bonus to its weapon systems’ Lock characteristics.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Bloom",
+        "id": "17ad-3ce8-8d61-f7e4",
+        "description": "Weapons with this special rule add a minor spike to the firing ship when this weapon is fired. This is in addition to any spikes gained from special orders or other sources.",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Blooming",
+        "id": "3f5e-e1af-0def-9025",
+        "description": "Other friendly ships within 6\" of this Ship are Hidden within its Bloom. Enemy ships targeting these Hidden ships ignore any Minor Spikes when measuring Weapons Range. However, Major Spikes are still used as normal.\nThis special rule ceases to function while this Ship is not controlled.",
+        "hidden": false,
+        "page": 1,
+        "publicationId": "ba6e-24f5-358e-f7b2"
+      },
+      {
+        "name": "Boardable",
+        "id": "b541-d6ea-b914-48b2",
+        "description": "This ship may be assigned Bulk Landers and Dropships as if it were a space station, but cannot have Defence Batteries.\nIf you begin the turn with either Armour or Infantry in a this ship and there are no enemy Ground Assets in this ship, you control this ship and may move and fire with it as if it were a part of your fleet.\nIf you control this ship, it becomes part of the first friendly Battlegroup that activates this turn (with no changes to its SR) and stays as part of that Battlegroup as long as it is under your control. If you lose and then regain control of this ship, it becomes a part of the first friendly Battlegroup that activates the turn after it is re-captured.\nIf there are friendly and enemy Ground Assets on this ship, it is not controlled by either side and may not be moved or fire its weapons.",
+        "hidden": false,
+        "page": 1,
+        "publicationId": "ba6e-24f5-358e-f7b2"
+      },
+      {
+        "name": "Bombardment",
+        "id": "9e06-f148-f8a3-26fb",
+        "description": "Weapons with this special rule can only target ground sectors. To fire a bombardment weapon, a ship must be in Low Orbit. A ship cannot use a Bombardment weapon while in Atmosphere, unless specifically stated. Unlike other weapon systems, Bombardment weapons incur no penalties for firing through orbital layers or shooting through atmosphere.",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Burnthrough (X)",
+        "id": "bae8-9e71-edf0-b246",
+        "description": "If an Attack dice for a Burnthrough weapon scores equal to or above its Lock number the Attack dice can be rolled again. If the second Lock roll is successful a third Lock roll can be made and so on until a Lock roll is failed. A Burnthrough weapon can score a maximum total of X total Hull damage (before armour saves are rolled) in one activation.\nIf a Critical Hit (i.e. rolling two or higher than the required lock number) is scored by a Burnthrough weapon, only that die will ignore the target’s Armour. Any subsequent hits rolled by this weapon against the same target during the same activation ignore the target’s armour too.",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Burnthrough (3)", "Burnthrough (5)", "Burnthrough (6)", "Burnthrough (8)", "Burnthrough (10)", "Burnthrough (12)", "Burnthrough (14)"]
+      },
+      {
+        "name": "Calibre (X)",
+        "id": "3290-a288-d618-2403",
+        "description": "Weapons with the Calibre rule will be followed by either L, M, H, S which refers to the tonnage value they have been designed to target.\nWhen these weapons are fired at targets with the same tonnage value as their weapon, reduce the lock value on their profile by 1. If the weapon has more than 1 tonnage value listed, then reduce the Lock when shooting at any of the listed tonnage values.\nIn addition, weapons with the Calibre H and/or S rule inflict Critical Hits on rolls exceeding their Lock value by ONE rather than the usual two (against targets of any Tonnage value).",
+        "hidden": false,
+        "page": 52,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Calibre (L)", "Calibre (M)", "Calibre (H&S)"]
+      },
+      {
+        "name": "Civilian Transport",
+        "id": "2fb8-a8c6-77da-bbb9",
+        "description": "This ship cannot receive Special Orders and unless otherwise stated in a scenario they always start in Low Orbit. \nThis ship does not suffer from Orbital Decay.\nThis ship may not be fired upon unless it is controlled by a player. Players may not fire upon a friendly Civilian Transport.\nThis ship cannot be the target of Command Cards.",
+        "hidden": false,
+        "page": 1,
+        "publicationId": "ba6e-24f5-358e-f7b2"
+      },
+      {
+        "name": "Close Action",
+        "id": "5816-87fd-bf61-2418",
+        "description": "Close Action weapon systems may only be used against targets that are both within their fire arc and inside the firing ship’s Scan range. Close action weapons can be fired in addition to any other weapon systems permitted by a ship’s orders. A ship that is unable to use any of its weapon systems due to special orders may not use its close action weapons either.\nHits from Close Action weapons can be stopped by a target’s Point Defence. Resolve the effects of Point Defence before taking any Armour or Passive Countermeasures saving throws.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Close Action (Beam)",
+        "id": "b190-a6a9-c262-b6d0",
+        "description": "Close Action (Beam) weapon systems obey all the normal rules for close action weapon systems except one – Point Defences cannot be used against them.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Close Action (Swarmer)",
+        "id": "5728-9541-723c-84a4",
+        "description": "It takes one Point Defence success more than normal to stop a point of Hull damage from a Swarmer weapon. This means that two successes are need to stop a normal hit from a swarmer, three successes for a critical.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Command Ship",
+        "id": "7ed1-7d4c-0969-21b9",
+        "description": "If you mount your Admiral in this ship, its cost is reduced to 0 pts and becomes AV5.",
+        "hidden": false,
+        "publicationId": "f185-0072-424b-ef19"
+      },
+      {
+        "name": "Corruptor",
+        "id": "c334-0240-1cae-8db7",
+        "description": "For every Attack Dice from this weapon that scores two higher than its Lock number and inflicts damage to an enemy ship (after saving throws have been taken), that ship gains a Corruptor token. At the beginning of each Damage Control Phase, a ship with Corruptor tokens takes 1 Damage for each token, with no saves of any type allowed. A Corruptor token may be repaired just like a Crippling effect.\nCorruptor has no effect on Space Stations or Sectors.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Crippling",
+        "id": "18ec-1b46-d0ed-e680",
+        "description": "Weapon systems with the Crippling characteristic inflict Crippling Damage when they score one or more critical hits in addition to any normal Hull Damage. Crippling damage is incurred regardless of the number of Hull points actually inflicted providing one or more Hull damage is suffered by the target. If a target ship is reduced to 50% hull or below by the attack, it will need to make two Crippling Damage rolls and apply both of them. If a weapon with the Crippling rule is affected by another rule which would make Critical Hits automatic (such as the Particle rule) then the roll you would have needed to achieve a Critical Hit is the roll required for the Crippling rule to take effect.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Deep Space Tracking",
+        "id": "4e23-6d50-32be-4d1a",
+        "description": "When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Minor Spike increases the ship’s Signature by 12” and a Major Spike increases it by 24” when targeted by this Space Station.",
+        "hidden": false,
+        "page": 3,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Detector",
+        "id": "d671-a199-2d13-3b64",
+        "description": "Detector ships may always use Active Scan special orders even if their Battlegroup has chosen a different special order for the turn. Every Detector ship in a Group may Active Scan, not just one - choose all Detector ships you wish to Active Scan simultaneously.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Disintegrator Bank",
+        "id": "2bf2-ba70-374b-6193",
+        "description": "Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these Arcs when shooting instead of the normal rules for Arcs. \nThe Shuriken’s Disintegrator Bank can be fired up to 5 times per round, but each must use a different Arc.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Distortion",
+        "id": "19a1-4f5b-d77b-442a",
+        "description": "The damage value of a Distortion weapon system is equal to the number of hits the weapon system inflicts during the attack (before rolling any saving throws).",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Dreadnought",
+        "id": "c77c-14da-96fe-32ac",
+        "description": "A Battlegroup containing a Dreadnought may not contain any other ships. A Dreadnought has a tonnage of 30 (hence the S2 in the profile). A Battlegroup containing a Dreadnought may exceed the normally allowed 33% of your fleet’s points cost.\nIf taken, your Admiral must be mounted in a Dreadnought.\nStandard Orders and Special Orders that allow a Dreadnought to fire one weapon system allow it to fire up to two weapon systems instead.\nDreadnoughts use special Crippling Damage and Catastrophic Damage tables, shown in the damage section. In addition, roll on the Crippling Damage table when the ship is reduced to 18 Hull or less and 10 Hull or less instead of the usual 50% of original hull.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Elite Fighter Escort",
+        "id": "c128-36c2-34a2-2915",
+        "description": "At the start of each turn, place 3 Elite Fighter tokens next to this ship. The controlling player may use any number of these Elite Fighter tokens to add 3 dice per token to this ships PD characteristic against a single attack from Launch Assets or Close Action weapons.\nThe controlling player may use an Elite Fighter token to defend against enemy Bulk Landers and Dropships, counting as a Defence Battery against Bulk Landers and Dropships launched by a single Carrier.",
+        "hidden": false,
+        "page": 1,
+        "publicationId": "ba6e-24f5-358e-f7b2"
+      },
+      {
+        "name": "Escape Velocity",
+        "id": "acfb-b2b0-1b53-d429",
+        "description": "These weapons ignore the penalties for firing through different Orbital Layers (including Atmosphere) and may be fired from Atmosphere. However, they must always target an enemy in a higher Orbital Layer than themselves.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Flash",
+        "id": "aa43-5926-e824-5cac",
+        "description": "A ship that is hit by a Flash weapon system gains a Minor Spike in addition to any other damage effects. In addition, if the weapon system inflicts 3 or more damage from the attack, another Minor Spike is added to the target.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Full Cloak",
+        "id": "7429-7752-92a3-2a9c",
+        "description": "A ship with the Full Cloak special rule can never receive an energy spike for any reason, until it is Crippled.",
+        "hidden": false,
+        "page": 50,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Fusillade (X)",
+        "id": "657f-18a5-dde4-5342",
+        "description": "When a ship uses the Weapons Free order, Fusillade weapon systems add X to their Attack value to determine the number of shots the weapon system can make this turn.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Fusillade (1)", "Fusillade (2)", "Fusillade (4)"]
+      },
+      {
+        "name": "Gravity Manipulator",
+        "id": "e317-45a0-bed7-e985",
+        "description": "Friendly ships that start their movement within this station’s Scan range measure their movement from any point at the edge of this space station’s Scan range, retaining their facing. Enemy ships that start their movement within this station’s Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.\nThis special rule ceases to function while you do not control this station.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Haywire",
+        "id": "5aa2-9fc6-3657-0b4c",
+        "description": "If this weapon hits, the targeted ship receives a Power Fluctuations token (even if it is not a Dreadnought). The ship suffers D3 Hull Points if going on Special Orders. If the targeted ship is using the Silent Running special orders, Signature is returned to normal instead. The targeted ship may not go on silent running.",
+        "hidden": false,
+        "publicationId": "f185-0072-424b-ef19"
+      },
+      {
+        "name": "Impel (X)",
+        "id": "c2d7-5ac4-4165-9954",
+        "description": "If the firing player inflicts X damage to an enemy ship (after saving throws have been taken) with a single weapon with the Impel (X) special rule, they may turn the target up to 45 degrees in either direction.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Impel (1)"]
+      },
+      {
+        "name": "Ion (X)",
+        "id": "3ede-cc59-6bd6-c21e",
+        "description": "If a group scores (X) hits from weapons with this special rule, the Energy Surge crippling effect is applied to that ship. If the target is a ship with with the Dreadnought special rule apply the Power Fluctuation effect instead.",
+        "hidden": false,
+        "publicationId": "da17-7d78-79da-7077",
+        "alias": ["Ion (2)", "Ion (3)"]
+      },
+      {
+        "name": "L (X)",
+        "id": "6920-7d49-9ec8-1e76",
+        "description": "This weapon may only be fired X times in a game, so make your shots count! This can also apply to Launch Assets (typically to torpedoes), in which case the Asset may only be launched X times in a game.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["L (1)", "L (2)", "L (3)", "L (4)"]
+      },
+      {
+        "name": "Launch",
+        "id": "6af7-681c-b2c8-5acc",
+        "description": "Ships with the Launch special rule are capable of carrying and using Launch Assets. Launch-capable ships will have their launch capacity noted in their descriptions along with the standard type load carried (i.e. Fighters, Bombers or Torpedoes as appropriate).",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Linked (X)",
+        "id": "08ea-9db1-110b-0150",
+        "description": "A weapon with this rule will normally be paired with a second weapon with the same Linked (X) value. In order for a ship to fire more than one weapon, it is normally required to declare a Weapons Free special order. However, all weapon systems with the same Linked (X) number count as a single weapon system for activation purposes, although they may be fired at different targets.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Linked (1)", "Linked (2)", "Linked (3)"]
+      },
+      {
+        "name": "Low Level",
+        "id": "6d0f-db40-ebb6-7a1f",
+        "description": "This weapon may be fired from atmosphere with no penalties to it's Lock value.",
+        "hidden": false,
+        "publicationId": "cb98-b8e2-3a32-a3d7"
+      },
+      {
+        "name": "Low Power",
+        "id": "99fd-3b81-01a1-e916",
+        "description": "Up to 1 Low Power weapon (or multiple Low Power weapons with the Linked special rule) may be fired instead of Close Action weapons in addition to other weapons permitted by a ship’s orders.\nA ship that is unable to use any of its weapon systems due to a special order (or Overcharging a weapon) may not use Low Power weapons either.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Mauler",
+        "id": "f6ec-da54-fd6f-2579",
+        "description": "The Lock characteristic of a Mauler weapon is equal to the Armour characteristic of the targeted ship.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Monitor",
+        "id": "bc43-3371-9c92-dfb6",
+        "description": "Monitors may not use Course Change or Max Thrust special orders. Weapons fired by Monitors suffer no Lock penalty for firing between Low and High Orbit.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Open",
+        "id": "dad0-81c2-bbc4-9eee",
+        "description": "Ships with the Open rule do not need to maintain coherency with other members of their Group or Battlegroup and the Battlegroup will suffer no negative modifiers to their strategy rating while ships with this rule are out of coherency.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Outlier",
+        "id": "0a60-4c58-5666-78ee",
+        "description": "Ships with this rule may ignore Battlegroup (but not Group) coherency rules, and the Battlegroup will suffer no negative modifiers to their Strategy Rating while ships with this rule are out of Battlegroup coherency.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Overcharge",
+        "id": "def9-d03d-747e-fd91",
+        "description": "A weapon with this rule may be Overcharged. An Overcharged weapon (and any weapons with Overcharge it is Linked with) doubles its Damage value for that attack.\nIf the ship is on Weapons Free Orders, it may only fire Close Action or Low Power weapons but not any other weapon types. However if the ship is on any other Orders, it may not use Launch Assets or fire any other weapons, including Close Action and Low Power weapons.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["OC"]
+      },
+      {
+        "name": "Partial Cloak",
+        "id": "1390-6580-87b5-33ff",
+        "description": "A ship with the Partial Cloak special rule can only ever receive a Minor Spike - it may never be increased to a Major Spike. If a rule or weapon would cause this ship to gain Major Spike, it instead gains a Minor Spike (or nothing at all if it already has a Minor Spike). This rule ceases to work when the ship is Crippled.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Particle",
+        "id": "06c5-88e4-6e75-a056",
+        "description": "Weapon systems with this rule always inflict Critical Hits if the Lock value of their attack is met. Passive saves may not be taken against them.",
+        "hidden": false,
+        "page": 54,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Rare",
+        "id": "becc-b3c9-c26c-abde",
+        "description": "You may only take a maximum of one of each Rare Group in a Skirmish sized game, two in a Clash and three in a Battle.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Re-Entry",
+        "id": "9f1d-3ad9-31e0-99c5",
+        "description": "Re-Entry weapons are capable of firing from Low Orbit into Atmosphere without any penalties to Lock for Atmosphere or crossing Orbital Layers.\nUnless otherwise stated, Re-Entry weapons use Scan + Signature for their range.\nRe-Entry weapons may not target Clusters or Sectors, although may shoot other targets outside of Atmosphere, following all the normal rules.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Regenerate (X)",
+        "id": "3dac-53c3-4dec-9e82",
+        "description": "A ship with Regenerate can make a number of damage control rolls equal to X in the Roundup phase of the turn to regain lost hull points.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Regenerate (6)"]
+      },
+      {
+        "name": "Reinforced Armour",
+        "id": "8560-b10d-f4cb-d837",
+        "description": "A ship with Reinforced-Armour only suffers Critical Hits from attack dice that score three more above their Lock number instead of two.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Scald",
+        "id": "c7fa-b054-49d7-e9d5",
+        "description": "Armour against Hull damage from scald weapons suffers a +1 penalty when the firing ship is within Scan range of the target.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Scanner Uplink",
+        "id": "03ba-7935-3fbf-e2c0",
+        "description": "This Space Station’s Scan range is increased by 3”. In addition, friendly ships within 3” of one or more Space Stations with this special rule increase their Scan range by 3”. This special rule ceases to function while this Space Station is controlled by an enemy player.",
+        "hidden": false,
+        "page": 3,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Shield Booster",
+        "id": "87a7-9394-a079-70fb",
+        "description": "Once per turn, if a friendly ship within 4” and on the same Orbital Layer of a ship with this rule is targeted, the friendly ship may re-roll all failed Passive Countermeasures saves for that attack.\nThe ship with this rule can choose to target itself.\nA ship with 13+ Hull Points requires 2 ships with Shield Booster in order to receive this bonus.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Signature Bloom",
+        "id": "fe72-9ccf-2b02-aeeb",
+        "description": "Friendly ships within 6” of this Space Station are Hidden within its Bloom. Enemy ships targeting these Hidden ships ignore any Minor Spikes when measuring range. However, Major Spikes are still used as normal.\nThis special rule ceases to function while this Space Station is controlled by an enemy player.",
+        "hidden": false,
+        "page": 4,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Space Station Shields",
+        "id": "b223-6d49-33fd-cf64",
+        "description": "The player that paid points for a Shaltari Space Station can choose to raise its shields when it fires its weapons.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Squadron (X)",
+        "id": "27bd-1d4f-7ca7-8d43",
+        "description": "If a Group has assigned X or more of the same weapon system with this special rule to the same target, increase the attack dice of one of those weapon systems (attacker's choice) by 3.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Squadron (2)", "Squadron (3)"]
+      },
+      {
+        "name": "Station Turret Rack",
+        "id": "0521-fa6f-9798-2598",
+        "description": "When you make an attack with this weapon, roll once and apply the roll to all enemy ships within range.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Station Turret Ring",
+        "id": "be67-35af-dd69-7435",
+        "description": "When you make an attack with this weapon, roll once and apply the roll to all enemy ships within range.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Stealth",
+        "id": "8670-fbd9-e48c-da59",
+        "description": "A ship with the Stealth special rule may fire a single weapon system when using Silent Running special orders (note this also means it can use close action weapons when Silent Running). The Stealth special rule only applies while the ship is not Crippled, so once it loses 50%+ of its Hull, the Stealth rule no longer applies.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Stealth Observation",
+        "id": "9859-d6f5-6288-475d",
+        "description": "This ship can Survey a Cluster regardless of its Battlegroup Tonnage Value.",
+        "hidden": false,
+        "publicationId": "f185-0072-424b-ef19"
+      },
+      {
+        "name": "Subsystem Network",
+        "id": "baf7-16fc-3e6c-26cd",
+        "description": "Whenever a ship with this rule fires a weapon, it may also fire an additional weapon of the same type if it has one. That weapon still cannot fire twice during one turn (for example if it has the Linked special rule).\nWeapons with Low Power and Subsystem Network may still use this rule even if firing on Low Power. Weapons that have been Overcharged cannot use Subsytem Network.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Unstable",
+        "id": "ccb2-ad72-fe3c-8797",
+        "description": "While on the Weapons Free Special Order, Attack dice rolls of an unmodified 6 cause the firing ship to lose that weapon’s damage value (after any modifiers) in Hull Points with no saves of any kind allowed.",
+        "hidden": false,
+        "page": 55,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Vectored",
+        "id": "fbc4-2a68-7c00-d6f1",
+        "description": "Ships with this rule are able to turn at any point in their movement, instead of when the order they have chosen states.",
+        "hidden": false,
+        "page": 51,
+        "publicationId": "3955-5d68-187e-60e2"
+      },
+      {
+        "name": "Void Skip",
+        "id": "2a57-b345-ab65-1da5",
+        "description": "If this ship goes on Standard Orders when within 6” of a Voidgate, rather than making a normal move, you may place it within 6” of any other Voidgate in that Voidgate chain (within 18” of each other as normal), facing any direction and it recieves a Minor Spike. It may be put within 1 Orbital Layer (up or down) of the Voidgate it is placed by. When doing this, the whole group must move together.",
+        "hidden": false,
+        "publicationId": "da17-7d78-79da-7077"
+      },
+      {
+        "name": "Voidgate Node",
+        "id": "e0af-7471-f015-a909",
+        "description": "This Gatestation’s Gates may only be used while you control it.",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      },
+      {
+        "name": "Voidgate-X",
+        "id": "c72f-5a44-e839-62c0",
+        "description": "When a Mothership is launching Gates, they are not deployed from the Mothership itself. Instead, they are deployed from Voidgates. A Voidgate will have a Voidgate Capacity (Voidgate-X) in its special rules, which represents how many Gate tokens may be deployed through it each turn (note that this is frequently lower than the launch value of Motherships, meaning that you generally need multiple Voidgates to make full use of a Mothership’s potential Launch capacity).\nIn order to do this, the Voidgate must be within 18” of the Mothership OR within 18” of another Voidgate that is in turn within 18” of the Mothership. You may have more than 2 Voidgates in this chain as long as it is unbroken. Only the Capacity of the Voidgate deploying the Gates is used if multiple Voidgates are chained in this way.\nIf a Voidgate is within 6” of a Cluster, then that Cluster counts as having a Defence Battery deployed in it when enemy Dropships or Bulklanders are deploying ground assets. However, Bulk Landers are destroyed on a 4+ rather than the usual 3+.\nVoidgates can also be used to relocate Ground Assets once deployed. During the Ground Combat step of the Roundup Phase, you may use nearby Voidgates to enhance the movement abilities of you existing ground forces.\nGround Asset tokens in Sectors within 3” of a Voidgate in Atmosphere or Space Stations in Low Orbit may be moved to another Sector within 3” of another Voidgate in Atmosphere or another Space Station within 3” of another Voidgate in Low Orbit anywhere else on the table. If the token is being moved to a Sector within a Cluster containing an enemy Defence Battery, that token is destroyed on a roll of 6+.\nGround Assets may not be deployed through any Voidgate which has used the Max Thrust Special Order that turn, although that Voidgate may still be part of a chain.\nAny number of Ground Asset tokens may be picked up by a single Voidgate, but only one may be dropped per Voidgate per turn using this rule. Tokens picked up but not dropped in this manner are automatically destroyed.\nTokens moved in this manner count as not being present in their new Sector for the remainder of the turn (and therefore may not contribute to scoring that turn).",
+        "hidden": false,
+        "page": 56,
+        "publicationId": "3955-5d68-187e-60e2",
+        "alias": ["Voidgate-1", "Voidgate-2"]
+      },
+      {
+        "name": "Voidspace Anchor",
+        "id": "584e-aeb4-4dec-420b",
+        "description": "Enemy ships starting their activation within 6” of this Space Station may only go on Station Keeping Orders (regardless of whether they’re able to take Special Orders or not, and regardless of what Special Orders the Battlegroup has taken).",
+        "hidden": false,
+        "publicationId": "49d6-e5e8-9402-7997"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Small Cluster",
+        "id": "9ea0-2d05-f377-5ab0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Clusters", "id": "d2be-e630-0fe6-e42c", "hidden": false, "primary": true, "targetId": "d454-56c9-ca87-79ce"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Small Cluster",
+            "id": "6188-16fa-99ca-0fff",
+            "hidden": false,
+            "page": "74, FAQ11",
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "b12e-32e7-4e65-87e9",
+            "typeName": "Cluster",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "e183-0cbf-c34e-ed1b"},
+              {"name": "Hold", "$text": "2VP", "typeId": "2291-2e61-b7dc-11f1"},
+              {"name": "Contest", "$text": "0VP", "typeId": "bc31-563e-7797-6fa3"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sector 1",
+            "id": "c07a-540a-ae89-6803",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7744-2d0f-41b7-b1f5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "6b0f-866e-863f-cccb",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "2038-2654-ad0e-913d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 2",
+            "id": "3449-1eac-552a-0bbd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "51ed-a70b-1d50-76aa",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "30b5-0949-3e5e-5ed5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "3a6a-9595-83e5-a4c9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Critical Location",
+            "id": "bf7a-e328-821c-c133",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9556-7fcb-6973-ac41",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "8d99-a9aa-a274-2e36",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medium Cluster",
+        "id": "9150-2f97-14e6-ac3c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Clusters", "id": "7eaf-50be-f7ae-fb28", "hidden": false, "primary": true, "targetId": "d454-56c9-ca87-79ce"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Medium Cluster",
+            "id": "c4d9-06d6-f0b6-36c8",
+            "hidden": false,
+            "page": "74, FAQ11",
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "b12e-32e7-4e65-87e9",
+            "typeName": "Cluster",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "e183-0cbf-c34e-ed1b"},
+              {"name": "Hold", "$text": "3VP", "typeId": "2291-2e61-b7dc-11f1"},
+              {"name": "Contest", "$text": "1VP", "typeId": "bc31-563e-7797-6fa3"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sector 1",
+            "id": "5100-d232-8ed8-15b6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "103e-68ac-8882-c353",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "1f38-ea59-5d09-cc72",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "f0b5-4840-37ed-6a9c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 2",
+            "id": "3bfb-6bed-c1e4-b1dd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "a27c-66b5-a8bc-0191",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5787-189a-5f6a-1577",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "3f0d-6ee2-10fb-7fd9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 3",
+            "id": "34c2-a147-3444-06a7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "f678-5b62-7acb-7809",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4963-030c-6337-854e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "3a6b-4bfe-2185-a808",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Critical Location",
+            "id": "1179-e5c6-ae0a-3738",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9ff0-c404-d78e-6cb8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "4b6a-022e-fc90-2f70",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Large Cluster",
+        "id": "66fd-e501-8ce7-a35f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Clusters", "id": "8bd8-7449-6246-0487", "hidden": false, "primary": true, "targetId": "d454-56c9-ca87-79ce"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Large Cluster",
+            "id": "dd31-cd8e-0939-2a09",
+            "hidden": false,
+            "page": "74, FAQ11",
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "b12e-32e7-4e65-87e9",
+            "typeName": "Cluster",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "e183-0cbf-c34e-ed1b"},
+              {"name": "Hold", "$text": "4VP", "typeId": "2291-2e61-b7dc-11f1"},
+              {"name": "Contest", "$text": "2VP", "typeId": "bc31-563e-7797-6fa3"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sector 1",
+            "id": "fbc0-c93e-e474-01ee",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9e8f-f655-83f3-3003",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "53ea-50da-0e15-b1f9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "a595-1efe-6392-7a94",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 2",
+            "id": "3330-bdaf-8050-8ae7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "8388-20ca-3c03-d2fe",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "ca21-2e04-4925-8d42",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "9748-e7e6-3921-a0a4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 3",
+            "id": "129e-dda3-029b-66c1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "fe3e-ef06-5550-4117",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "88a8-5589-45cb-590c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "2ea9-bcc9-1506-845e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Sector 4",
+            "id": "39f5-799b-0c48-c0e7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "f61e-1814-47ab-e161",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8970-421f-80ad-8fc1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sector",
+                "id": "9312-aa05-5139-928c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3e39-461e-6d47-16b3",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          },
+          {
+            "name": "Critical Location",
+            "id": "6621-0cdf-ddf5-2255",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "b4a8-34c9-08c6-106c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "dd3e-82f4-099a-6cca",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Commercial Sector",
+        "id": "44b0-db51-bbdb-d61a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Commercial Sector",
+            "id": "24ab-6093-97ee-dfd7",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "8", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "4+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "1", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Industrial Sector",
+        "id": "9838-c0be-f9f6-0041",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Industrial Sector",
+            "id": "d7e3-ea07-da10-319b",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "4", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "4+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "2", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Military Sector",
+        "id": "4de7-a7ee-a57e-887e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Escape Velocity", "id": "a1c0-8d7e-8f21-e65c", "hidden": false, "targetId": "acfb-b2b0-1b53-d429", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Military Sector",
+            "id": "bda2-a956-28e7-6cb2",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "4", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "3+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "1", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "$text": "Defence Weapons", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          },
+          {
+            "name": "Military Sector - Defence Weapons",
+            "id": "3248-163d-70f8-f2c0",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Escape Velocity", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Orbital Defence Sector",
+        "id": "91eb-c35b-050d-7a93",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "75eb-40fe-753f-ccfe", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Escape Velocity", "id": "4692-e8c5-dc86-556e", "hidden": false, "targetId": "acfb-b2b0-1b53-d429", "type": "rule"},
+          {"name": "Flash", "id": "592e-feb4-d895-082d", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Orbital Defence Sector",
+            "id": "d096-5684-a485-b4a1",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "6", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "3+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "1", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "$text": "Orbital Gun", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          },
+          {
+            "name": "Orbital Defence Sector - Orbital Gun",
+            "id": "17fb-fcee-50c7-97a0",
+            "hidden": false,
+            "page": 75,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "2+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "1", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "2", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough(6), Escape Velocity, Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Plant Sector",
+        "id": "db66-0722-bc5f-6bf3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Power Plant Sector",
+            "id": "8203-a4b4-cf80-c73b",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "6", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "4+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "4", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "$text": "Volatile", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Comms Station Sector",
+        "id": "508e-f1e1-cbf0-5cba",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Comms Station Sector",
+            "id": "8e5f-1612-c3d7-1551",
+            "hidden": false,
+            "page": 74,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2c32-5f9e-952e-1e30",
+            "typeName": "Sector",
+            "characteristics": [
+              {"name": "Hull", "$text": "4", "typeId": "9d35-735b-a456-9535"},
+              {"name": "A", "$text": "5+", "typeId": "6854-a747-70a9-dc3e"},
+              {"name": "Value", "$text": "1", "typeId": "e03e-9451-4084-7802"},
+              {"name": "Special", "$text": "Scanner Uplink", "typeId": "541c-a2de-0f94-bc77"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Small Space Station",
+        "id": "df4f-4a71-603a-020b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Space Stations", "id": "0631-483f-fa12-7083", "hidden": false, "primary": true, "targetId": "6b03-f33c-554a-8571"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Laser Armament",
+            "id": "76d6-2198-ba95-6d72",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "127f-3884-f706-e4a6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Mass Driver Armament",
+            "id": "0021-672a-e78b-66c9",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f57f-44de-7234-b547",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Missile Armament",
+            "id": "78b6-ba42-28ef-565e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "a01d-6ebc-7ac3-d891",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Orbital Layer",
+            "id": "9286-6d6c-93d8-ef0b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4dcf-b787-ba8c-b03a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Small Space Station",
+            "id": "9a3c-64f4-47af-229b",
+            "hidden": false,
+            "page": 54,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2f33-491f-7a7b-d5f5",
+            "typeName": "Space Station",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "8536-87d2-d32f-96b5"},
+              {"name": "Sig", "$text": "4\"", "typeId": "5e15-d424-4723-cfb0"},
+              {"name": "Thrust", "$text": "0\"", "typeId": "714c-5a66-45f8-0f17"},
+              {"name": "Hull", "$text": "8", "typeId": "7fa4-b1da-87aa-54ad"},
+              {"name": "A", "$text": "3+", "typeId": "41ac-cf99-497a-33b8"},
+              {"name": "PD", "$text": "5", "typeId": "4f20-0a1e-3b75-f2f8"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Critical Location",
+            "id": "be06-e6d3-c532-39fa",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "c60e-5982-7e94-4fa2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "e23b-be17-92de-19ff",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medium Space Station",
+        "id": "3f23-ae01-996c-9dbd",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Space Stations", "id": "2560-4dba-b13a-d664", "hidden": false, "primary": true, "targetId": "6b03-f33c-554a-8571"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Laser Armament",
+            "id": "7969-c9b8-f80a-d3ff",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "127f-3884-f706-e4a6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Mass Driver Armament",
+            "id": "07a5-255b-a990-fb10",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f57f-44de-7234-b547",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Missile Armament",
+            "id": "207c-acb3-efc2-df2f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "a01d-6ebc-7ac3-d891",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Orbital Layer",
+            "id": "31a0-9127-e952-08b8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4dcf-b787-ba8c-b03a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Medium Space Station",
+            "id": "11df-0082-5096-e467",
+            "hidden": false,
+            "page": 54,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2f33-491f-7a7b-d5f5",
+            "typeName": "Space Station",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "8536-87d2-d32f-96b5"},
+              {"name": "Sig", "$text": "6\"", "typeId": "5e15-d424-4723-cfb0"},
+              {"name": "Thrust", "$text": "0\"", "typeId": "714c-5a66-45f8-0f17"},
+              {"name": "Hull", "$text": "12", "typeId": "7fa4-b1da-87aa-54ad"},
+              {"name": "A", "$text": "3+", "typeId": "41ac-cf99-497a-33b8"},
+              {"name": "PD", "$text": "8", "typeId": "4f20-0a1e-3b75-f2f8"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Critical Location",
+            "id": "8d65-c0c6-f2a2-9611",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "785b-b50b-bb2d-3b29",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "26bf-b92b-e171-edc7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Large Space Station",
+        "id": "0d04-e909-0384-1cd6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Space Stations", "id": "08f2-327e-b1f2-fc8e", "hidden": false, "primary": true, "targetId": "6b03-f33c-554a-8571"}],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Laser Armament",
+            "id": "659e-4eed-7f81-28d8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "127f-3884-f706-e4a6",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Mass Driver Armament",
+            "id": "5141-c4dd-2813-c647",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f57f-44de-7234-b547",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Missile Armament",
+            "id": "a522-2936-c8c3-0ae6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "a01d-6ebc-7ac3-d891",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Orbital Layer",
+            "id": "bfec-9884-9e5a-b1a3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4dcf-b787-ba8c-b03a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Large Space Station",
+            "id": "f268-bb92-2af7-a45d",
+            "hidden": false,
+            "page": 54,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "2f33-491f-7a7b-d5f5",
+            "typeName": "Space Station",
+            "characteristics": [
+              {"name": "Scan", "$text": "6\"", "typeId": "8536-87d2-d32f-96b5"},
+              {"name": "Sig", "$text": "8\"", "typeId": "5e15-d424-4723-cfb0"},
+              {"name": "Thrust", "$text": "0\"", "typeId": "714c-5a66-45f8-0f17"},
+              {"name": "Hull", "$text": "16", "typeId": "7fa4-b1da-87aa-54ad"},
+              {"name": "A", "$text": "3+", "typeId": "41ac-cf99-497a-33b8"},
+              {"name": "PD", "$text": "12", "typeId": "4f20-0a1e-3b75-f2f8"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Critical Location",
+            "id": "dac1-2892-f579-0053",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "a164-14ca-1dc3-7a06",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "3eb1-f977-af87-6f6f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mass Driver Armament",
+        "id": "f57f-44de-7234-b547",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 54,
+        "publicationId": "bb34-1413-pubN67767",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d1ad-eef6-a115-94f3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 5
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Mass Driver Armament",
+            "id": "db10-0f0d-992f-efe6",
+            "hidden": false,
+            "page": 54,
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Laser Armament",
+        "id": "127f-3884-f706-e4a6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 54,
+        "publicationId": "bb34-1413-pubN67767",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7df1-3fb2-56c9-c2ab",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 5
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough (X)", "id": "d2af-deb4-c95e-b500", "hidden": false, "targetId": "bae8-9e71-edf0-b246", "type": "rule"},
+          {"name": "Flash", "id": "39f7-5ba2-4cd7-adf2", "hidden": false, "targetId": "aa43-5926-e824-5cac", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Laser Armament",
+            "id": "6490-8eaf-582b-e674",
+            "hidden": false,
+            "page": "54, FAQ11, RU517",
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "2", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Burnthrough(4), Flash", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Missile Armament",
+        "id": "a01d-6ebc-7ac3-d891",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 54,
+        "publicationId": "bb34-1413-pubN67767",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "072a-0e4f-8de1-1614",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 5
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "c38e-31ce-89fc-fbc4", "hidden": false, "targetId": "5816-87fd-bf61-2418", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Missile Armament",
+            "id": "ceb5-14da-0de9-036c",
+            "hidden": false,
+            "page": "54, FAQ11",
+            "publicationId": "bb34-1413-pubN67767",
+            "typeId": "1ddb-c7dc-57a9-b97f",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Lock", "$text": "3+", "typeId": "b264-7fc5-348d-06c0"},
+              {"name": "Attacks", "$text": "4", "typeId": "00d0-7374-e403-ad78"},
+              {"name": "Damage", "$text": "1", "typeId": "ae4d-c88d-138f-1fcf"},
+              {"name": "Arc", "$text": "F/S/R", "typeId": "61a9-ead3-7b97-32ed"},
+              {"name": "Special", "$text": "Close Action", "typeId": "008a-e561-1ceb-a0f1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flagship (H)",
+        "id": "f413-1384-f5c6-44c1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Flagships", "id": "963c-aef1-6735-d11c", "hidden": false, "primary": true, "targetId": "7907-82a3-5278-4f8b"}],
+        "constraints": [
+          {
+            "id": "81a6-198d-a483-7b9c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0},
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0}
+        ]
+      },
+      {
+        "name": "Flagship (M)",
+        "id": "7876-1198-be24-9d63",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Flagships", "id": "a891-9448-afbd-0fea", "hidden": false, "primary": true, "targetId": "7907-82a3-5278-4f8b"}],
+        "constraints": [
+          {
+            "id": "be4e-7390-9fef-0fa9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0},
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0}
+        ]
+      },
+      {
+        "name": "Flagship (S)",
+        "id": "5985-0d00-1fcc-b8be",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Flagships", "id": "66dd-358d-8963-745d", "hidden": false, "primary": true, "targetId": "7907-82a3-5278-4f8b"}],
+        "constraints": [
+          {
+            "id": "6851-f07f-679d-5205",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0},
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0}
+        ]
+      },
+      {
+        "name": "Flagship (S2)",
+        "id": "b338-59f9-6801-038a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Flagships", "id": "c805-85a1-aeed-bddb", "hidden": false, "primary": true, "targetId": "7907-82a3-5278-4f8b"}],
+        "constraints": [
+          {
+            "id": "8177-6908-c960-7c56",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+          {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0},
+          {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Sector",
+        "id": "3e39-461e-6d47-16b3",
+        "collective": false,
+        "defaultSelectionEntryId": "ae60-70f5-42a1-8817",
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "ab3a-6dea-22ae-98fd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "9e6e-0e66-0070-f71a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Commercial Sector",
+            "id": "ae60-70f5-42a1-8817",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "44b0-db51-bbdb-d61a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Industrial Sector",
+            "id": "e82b-9826-5491-0c42",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "9838-c0be-f9f6-0041",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Military Sector",
+            "id": "2245-571c-60fa-67ce",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4de7-a7ee-a57e-887e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Orbital Defence Sector",
+            "id": "d3fe-97fe-a3ec-f50d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "91eb-c35b-050d-7a93",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Power Plant Sector",
+            "id": "8d6c-305a-0b76-23ea",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "db66-0722-bc5f-6bf3",
+            "type": "selectionEntry",
+            "rules": [
+              {
+                "name": "Volatile",
+                "id": "a2ec-d5c7-5d39-25ec",
+                "description": "Destruction of this power plant will result in a catastrophic meltdown! If this Sector is destroyed, all other Sectors in the Cluster take 4 damage (saves may be taken against this damage as normal).",
+                "hidden": false,
+                "page": 41,
+                "publicationId": "3955-5d68-187e-60e2"
+              }
+            ]
+          },
+          {
+            "name": "Comms Station Sector",
+            "id": "020e-7e6f-328f-e410",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "508e-f1e1-cbf0-5cba",
+            "type": "selectionEntry",
+            "rules": [
+              {
+                "name": "Scanner Uplink",
+                "id": "136d-e562-77c8-0d7f",
+                "description": "This is the nexus for a network of orbiting and ground based scanners. All ships and other assets controlled by the holder gain +3” to their Scan Value. This effect is cumulative if you control multiple Sectors with this rule.",
+                "hidden": false,
+                "page": 41,
+                "publicationId": "3955-5d68-187e-60e2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Orbital Layer",
+        "id": "4dcf-b787-ba8c-b03a",
+        "collective": false,
+        "defaultSelectionEntryId": "4167-da89-56a2-be97",
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "874a-cb54-4abb-fe28",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "5bf1-0081-030d-8a7b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "1 Atmosphere",
+            "id": "480b-3a2c-3b42-340f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          },
+          {
+            "name": "2 Low Orbit",
+            "id": "4167-da89-56a2-be97",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          },
+          {
+            "name": "3 High Orbit",
+            "id": "caa1-90ff-46f0-2495",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "e888-2584-886f-7f2c", "value": 0},
+              {"name": "Launch", "typeId": "ac2f-9b71-e1c5-783a", "value": 0},
+              {"name": "SR", "typeId": "c0c3-cb79-19ac-1dbc", "value": 0}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
